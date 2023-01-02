@@ -16,21 +16,26 @@
         opacity: 0;
     }
 }
+a {
+    text-decoration: none;
+    transition: .3s;
+}
 .bd-gutter {
     margin-left: 3rem;
     margin-right: 3rem;
 }
-main { 
+main {
     h1 {
         font-family: 'Hammersmith One', sans-serif;
     }
     .bd-masthead {
+        padding: 8rem 0;
         background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.01),
         rgba(var(--bs-body-bg-rgb), 1) 85%),
         radial-gradient(ellipse at top left, rgba(var(--bs-primary-rgb), 0.5), transparent 50%),radial-gradient(ellipse at top right, rgba(var(--bd-accent-rgb), 0.5), transparent 50%),radial-gradient(ellipse at center right, rgba(var(--bd-violet-rgb), 0.5), transparent 50%),radial-gradient(ellipse at center left, rgba(var(--bd-pink-rgb), 0.5), transparent 50%);
         .bg-visual {
-            width: 200px;
-            height: 200px;
+            width: 104px;
+            height: 150px;
             background: url(../assets/main_visual.svg) no-repeat 50% 50%;
         }
         .lead {
@@ -53,8 +58,40 @@ main {
         }
     }
 }
+hr {
+    color: rgb(226, 232, 240);
+    opacity: 0.75;
+}
+.card {
+    border-color: rgba(226, 232, 240, 0.75);
+}
 .navbar-brand {
     img {
         opacity: 0.7;
+    }
+}
+.display-5 {
+    font-size: 2rem;
+}
+.py-lg-20 {
+    padding-top: 9.5rem !important;
+    padding-bottom: 9.5rem !important;
+}
+.text-inherit {
+    color: inherit;
+}
+.fs-4 {
+    font-size: 1rem !important;
+    color: $secondary
+}
+.mt-n8 {
+    margin-top: -3.5rem!important;
+}
+.img-hover {
+    box-shadow: 0 3px 6px rgba(3, 0, 71, 0.4);
+    transition: .3s;
+    &:hover {
+        transform: scale(1.02);
+        box-shadow: none;
     }
 }
