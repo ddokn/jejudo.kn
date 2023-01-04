@@ -1,7 +1,7 @@
 <template>
   <header class="sticky-top navbar-expand-lg bg-primary">
     <nav class="navbar navbar-dark container-lg">
-    <div class="container-fluid">
+    <div class="container-fluid px-lg-0">
       <a class="navbar-brand" href="#">
           <img src="../assets/logo.svg" width="20">
       </a>
