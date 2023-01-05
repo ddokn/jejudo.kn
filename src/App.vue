@@ -1,155 +1,27 @@
 <template>
     
-    <NavBar :menu="menu" :weather="weather" :apiLoad="apiLoad" :icons="icons"/>
+    <NavBar :link="link" :menu="menu" :weather="weather" :apiLoad="apiLoad" :icons="icons"/>
 
-    <main class="pt-0 pb-0">
-      <section class="bd-masthead">
-        <div class="container-xl d-flex flex-column">
-          <div class="col-md-8 m-auto text-center h-100">
-            <div class="bg-visual d-block mx-auto mb-3"></div>
-            <h1 class="mb-1 fw-semibold lh-1">JejuDo.kn</h1>
-            <p class="mb-4 fs-6">
-              <strong class="text-primary">D + {{ dday() }}</strong> Rest in JEJU
-            </p>
-            <p class="lead mb-4 text-secondary">
-              육지 토박이가 제주 섬 놈이 되어가는 과정을 담은 곳<br/>
-              또는 이것저것 가져다 써보는 연습장
-              <!-- 자타공인 막입의 소유자가 도민들과 함께 다녀온 검증된 맛집과 명소를<br/>
-              기록하려 만든 지극히 개인적인 공간<br/>  -->
-            </p>
-            <!-- <p class="text-secondary">만들다 욕심나서 이것저것 가져다 써보는 연습장</p> -->
-          </div>
-        </div>
-        <!-- <span class="scroll-down"></span> -->
-      </section>
+    <router-view :link="link"></router-view>
+    
+    <FooterBar/>
 
-      <!-- <hr> -->
-
-      <section class="py-lg-20">
-        <div class="container-lg px-4 px-lg-0">
-            <!-- <div class="row">
-              <div class="col-12">
-                <h2 class="text-center">
-                  자타공인 막입의 소유자가 다녀온 검증된 맛집과 명소를<br/>
-                  기록하려 만든 지극히 개인적인 공간<br/>
-                </h2>
-              </div>
-            </div> -->
-            <div class="row g-6">
-                <div class="col-lg-4 col-12">
-                    <div class="card rounded-3 mb-14">
-                        <div class="px-lg-8 px-4 ">
-                            <a href="https://geeksui.codescandy.com/geeks/pages/landings/home-academy.html" target="_blank"> <img src="./assets/main01.jpeg" alt="" class="mt-n8 img-fluid w-100 img-hover rounded-3">
-                            </a>
-                        </div>
-                        <div class="card-body px-4 py-4 p-md-8">
-                            <div class="border-bottom pb-3 mb-4">
-                                <h2 class="mb-2 fw-bold display-5"> <a href="#" class="text-inherit">Local Food</a>
-                                </h2>
-                                <p class="fs-4">먹은 곳</p>
-                            </div>
-                            <div class="d-grid">
-                                <a href="https://geeksui.codescandy.com/geeks/index.html" target="_blank" class="btn btn-outline-white">
-                                  더보기 <i class="bi bi-arrow-right"></i>
-
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-12">
-                    <div class="card  rounded-3 mb-14">
-                        <div class="px-lg-8 px-4 ">
-                            <a href="https://geeksui.codescandy.com/geeks/pages/dashboard/dashboard-analytics.html" target="_blank"> <img src="./assets/main02.jpeg" alt="" class="mt-n8 img-fluid w-100 img-hover rounded-3 "></a>
-                        </div>
-                        <div class="card-body px-4 py-4 p-md-8">
-                            <div class="border-bottom pb-3 mb-4">
-                                <h2 class="mb-2 fw-bold display-5"> <a href="#" class="text-inherit">Tourist Spot</a></h2>
-                                <p class="fs-4">가본 곳</p>
-                            </div>
-                            <div class="d-grid">
-                                <a href="https://geeksui.codescandy.com/geeks/pages/dashboard/dashboard-analytics.html" target="_blank" class="btn btn-outline-white">
-                                    더보기 <i class="bi bi-arrow-right"></i>
-                                </a>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-lg-4 col-12">
-                    <div class="card rounded-3 mb-14">
-                        <div class="px-lg-8 px-4">
-                            <a href="https://geeksui.codescandy.com/geeks/pages/landings/course-lead.html" target="_blank"> <img src="./assets/main03.jpeg" alt="" class="mt-n8 img-fluid w-100 img-hover rounded-3 ">
-                            </a>
-                        </div>
-                        <div class="card-body px-lg-8 px-4 py-4 p-md-8">
-                            <div class="border-bottom pb-3 mb-4">
-                                <h2 class="mb-2 fw-bold display-5"> <a href="#" class="text-inherit">Daily Record</a></h2>
-                                <p class="fs-4">느낀 것(준비 중)</p>
-                            </div>
-                            <div class="d-grid">
-                                <a href="https://geeksui.codescandy.com/geeks/pages/landings/course-lead.html" target="_blank" class="btn btn-outline-white">
-                                  더보기 <i class="bi bi-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </section>
-      <!-- <hr> -->
-      <section class="bg-light"> <!-- bg-light -->
-        <div class="container-lg px-4 px-lg-0 py-4 pb-5 size-md">
-          <div class="row text-center">
-            <div class="col-12">
-              <h2 class="mt-5 mb-2 fw-bold display-5">이 사이트는요</h2>
-              <p class="fs-4 mb-4">이런 것들로 만들었음</p>
-            </div>
-          </div>
-          <div class="row text-center ">
-            <div class="col-lg-2 col-md-4 col-sm-4 col-xs-2 mb-grid-gutter pb-2 image-wrap">
-              <img class="inline-block mb-3" src="./assets/html5.svg" alt="">
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-4 col-xs-2 mb-grid-gutter pb-2 image-wrap">
-              <img class="inline-block mb-3" src="./assets/sass.svg" alt="">
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-4 col-xs-2 mb-grid-gutter pb-2 image-wrap">
-              <img class="inline-block mb-3" src="./assets/javascript.svg" alt="">
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-4 col-xs-2 mb-grid-gutter pb-2 image-wrap">
-              <img class="inline-block mb-3" src="./assets/bootstrap.svg" alt="">
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-4 col-xs-2 mb-grid-gutter pb-2 image-wrap">
-              <img class="inline-block mb-3" src="./assets/vue.svg" alt="">
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-4 col-xs-2 mb-grid-gutter pb-2 image-wrap">
-              <img class="inline-block mb-3" src="./assets/npm.svg" alt="">
-            </div>
-          </div>
-        </div>
-      </section>
-
-    </main>
-
-    <footer class="bg-success">
-      <div class="container-lg px-4 py-3">
-        <div class="copyright text-center">© 2023, Designed by Invision. Coded by Creative Tim.</div>
-      </div>
-    </footer>
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue'
+import FooterBar from './components/FooterBar.vue'
 import axios from 'axios'
+import { Tooltip } from 'bootstrap/dist/js/bootstrap.esm.min.js'
 
 export default {
   name: 'App',
   components: {
-    NavBar
+    NavBar,
+    FooterBar
   },
   data(){
+
     return {
       menu: ['먹은 곳', '가본 곳', '느낀 것'],
       weather: [],
@@ -162,20 +34,19 @@ export default {
         'bi-brightness-high-fill', //800 클리어
         'bi-cloud-fill', //8xx 구름
       ],
+      link: [
+        '/food',
+        '/spot',
+        '/record'
+      ]
     }
   },
   mounted(){
       this.getWeather();
+      Array.from(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      .forEach(tooltipNode => new Tooltip(tooltipNode))
   },
   methods: {
-    dday(){
-      let now = new Date();
-      let start = new Date('2021-09-30');
-      let timeDiff = now.getTime() - start.getTime();
-      let day = Math.floor(timeDiff / (1000 * 60 * 60 * 24) + 1);
-      
-      return day
-    },
     getWeather(){
       let apiUrl = process.env.VUE_APP_WEATHER_URL;
       let apiKey = process.env.VUE_APP_WEATHER_TOKEN;

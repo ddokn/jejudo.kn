@@ -28,11 +28,11 @@ header {
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%), inset 0 -1px 0 rgb(255 255 255 / 15%);
 }
 main {
-    h1 {
+    h1, .contact_mail {
         font-family: 'Hammersmith One', sans-serif;
     }
     .bd-masthead {
-        padding: 8rem 0;
+        padding: 8rem 0 6rem;
         background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.01),
         rgba(var(--bs-body-bg-rgb), 1) 85%),
         radial-gradient(ellipse at top left, rgba(var(--bs-primary-rgb), 0.5), transparent 50%),radial-gradient(ellipse at top right, rgba(var(--bd-accent-rgb), 0.5), transparent 50%),radial-gradient(ellipse at center right, rgba(var(--bd-violet-rgb), 0.5), transparent 50%),radial-gradient(ellipse at center left, rgba(var(--bd-pink-rgb), 0.5), transparent 50%);
@@ -62,7 +62,7 @@ main {
     }
 }
 hr {
-    color: rgb(226, 232, 240);
+    color: rgb(226, 232, 240, 0.75);
     opacity: 0.75;
 }
 .card {
@@ -76,9 +76,13 @@ hr {
 .display-5 {
     font-size: 1.4rem;
 }
+.py-6 {
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important
+}
 .py-lg-20 {
-    padding-top: 2rem !important;
-    padding-bottom: 7rem !important;
+    padding-top: 3rem !important;
+    padding-bottom: 4rem !important;
 }
 .text-inherit {
     color: inherit;
@@ -97,6 +101,9 @@ hr {
         transform: scale(1.02);
         box-shadow: none;
     }
+}
+.text-sm {
+    font-size: 0.8rem !important;
 }
 .btn-outline-white {
     border-color: $border-color;
@@ -118,23 +125,111 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
-    img {
-        max-width: 80px;
-        width: 100%;
+    flex-direction: column;
+    figure {
+        display: flex;
+        align-items: center;
+        height: 80px;
+        width: 80px;
+        justify-content: center;
+        margin-bottom: .5rem;
+        img {
+            max-width: 70px;
+            width: 100%;
+        }
+    }
+    h5 {
+        font-size: 1rem;
     }
 }
 .pb-6 {
-    padding-bottom: 6rem !important;
+    padding-bottom: 4rem !important;
 }
 .size-md {
     max-width: 800px;
 }
 .img-fluid {
-    max-height: 300px;
-    object-fit: cover;
+    max-height: 260px;
+    // object-fit: cover;
+}
+.contact_mail {
+    font-size: 1.4rem;
+    display: inline-block;
 }
 footer {
+    &.bg-gray-dark {
+        background: var(--bs-gray-dark);
+    }
     .copyright {
         color: rgba(255, 255, 255, 0.55);
+    }
+}
+
+@media (max-width: 991px) {
+    main {
+        .bd-masthead {
+            padding: 6rem 0 4rem;
+        }
+    }
+    
+    .img-fluid {
+        // max-height: calc(30rem + 1vw);
+    }
+}
+@media (max-width: 576px) {
+    main {
+        .bd-masthead {
+            padding: 4rem 0 2rem;
+            .bg-visual {
+                width: 74px;
+                height: 120px;
+            }
+            h1 {
+                font-size: calc(1.375rem + 1vw);
+            }
+        }
+    }
+    .image-wrap {
+        width: 33.33333%;
+        h5 {
+            font-size: 0.8rem;
+        }
+    }
+    .display-5 {
+        font-size: 1.2rem;
+    }
+    .mb-4 {
+        margin-bottom: 0.7rem !important;
+    }
+    .mb-14 {
+        margin-bottom: 5.5rem;
+    }
+    .fs-4 {
+        font-size: 0.8rem !important;
+    }
+    .col-lg-4 {
+        &:last-child {
+            .card {
+                &.mb-14 {
+                    &:last-child {
+                        margin-bottom: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+    .img-fluid {
+        max-height: none;
+    }
+    .lead {
+        font-size: calc(0.6rem + 1vw);
+    }
+    .contact_mail {
+        font-size: 1.2rem;
+        color: #BB254A !important;
+    }
+    .py-6 {
+        padding-top: 4rem !important;
+        padding-bottom: 4rem !important;
     }
 }

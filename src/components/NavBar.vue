@@ -1,8 +1,8 @@
 <template>
   <header class="sticky-top navbar-expand-lg bg-primary">
-    <nav class="navbar navbar-dark container-lg">
+    <nav class="navbar navbar-dark container-lg size-md">
     <div class="container-fluid px-lg-0">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="/">
           <img src="../assets/logo.svg" width="20">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
@@ -10,15 +10,17 @@
       </button>
       <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">JejuDo.kn</h5>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
+
           <ul class="navbar-nav flex-grow-1 pe-3">
             <li class="nav-item" v-for="(a, i) in menu" :key="a">
-              <a class="nav-link" href="#">{{  menu[i] }}</a>
+              <a class="nav-link" :href=" link[i] ">{{  menu[i] }}</a>
             </li>
           </ul>
+
           <ul class="navbar-nav lh-1 flex-row flex-wrap ms-md-auto">
             <li class="nav-item col-6 col-lg-auto">
               <a class="nav-link py-2 px-0 px-lg-2" href="https://github.com/ddokn" target="_blank" rel="noopener">
@@ -40,12 +42,11 @@
             </li>
             <li class="nav-item col-6 col-lg-auto">
               
-              <a class="nav-link py-2 px-0 px-lg-2" href="https://opencollective.com/bootstrap" target="_blank" rel="noopener">
+              <a class="nav-link py-2 px-0 px-lg-2" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="left" title="지금 제주 날씨는">
                   <span class="me-2">
                       <i class="bi" :class="icons"></i>
                   </span>
                   <span>{{ weather.main?.temp }}°</span>
-                  <span>{{ data }}</span>
               </a>
             </li>
           </ul>
@@ -62,13 +63,15 @@ export default {
     name: 'NavBar',
     data(){
         return {
+          
         }
     },
     props: {
         menu: Number,
         weather: Array,
         apiLoad: Boolean,
-        icons: Array
+        icons: Array,
+        link: Array
     },
     methods: {
     },
