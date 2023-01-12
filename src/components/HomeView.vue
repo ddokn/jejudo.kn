@@ -155,7 +155,7 @@
               <div class="col-12 text-center">
                 <h2 class="mb-2 fw-bold display-5">함께 나누고 싶은 얘기가 있다면</h2>
                 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=k.ddokn@gmail.com" class="display-1 mb-2 fw-semibold lh-1 contact_mail text-primary" target="_blank" >k.ddokn@gmail.com</a>
-                <p class="fs-4 mb-0">메일을 보내주시면 빠른 시일 내로 답장할게요</p>
+                <p class="fs-4 mb-0">메일을 보내주세요. 빠른 시일 내로 답장할게요</p>
               </div>
             </div>
           </div>
