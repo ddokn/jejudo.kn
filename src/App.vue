@@ -62,27 +62,19 @@ export default {
       })
       .then((res)=>{
         this.weather = res.data;
-
-
         if ( this.weather.weather[0].id >= 200 && this.weather.weather[0].id < 300 ) {
           this.icons = this.icons[0];
-          console.log(111);
         } else if ( this.weather.weather[0].id >= 300 && this.weather.weather[0].id < 600 ) {
           this.icons = this.icons[1];
-          console.log(222);
         } else if ( this.weather.weather[0].id >= 600 && this.weather.weather[0].id < 700 ) {
           this.icons = this.icons[2];
-          console.log(333);
         } else if ( this.weather.weather[0].id >= 700 && this.weather.weather[0].id < 800 ) {
           this.icons = this.icons[3];
-          console.log(444);
         } else if ( this.weather.weather[0].id == 800  ) {
           this.icons = this.icons[4];
-          console.log(555);
         } else if ( this.weather.weather[0].id >= 801  ) {
           this.icons = this.icons[5];
         }
-
         this.apiLoad = true;
       })
       .catch((error)=>{

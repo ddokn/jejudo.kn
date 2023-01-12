@@ -164,7 +164,9 @@ footer {
         color: rgba(255, 255, 255, 0.55);
     }
 }
-
+.fs-sm {
+    font-size: 0.875rem !important;
+}
 @media (max-width: 991px) {
     main {
         .bd-masthead {
@@ -174,6 +176,13 @@ footer {
     
     .img-fluid {
         // max-height: calc(30rem + 1vw);
+    }
+}
+@media (max-width: 991px) {
+    header {
+        .size-md {
+            max-width: 777px;
+        }   
     }
 }
 @media (max-width: 576px) {
@@ -205,7 +214,7 @@ footer {
         margin-bottom: 5.5rem;
     }
     .fs-4 {
-        font-size: 0.8rem !important;
+        // font-size: 0.8rem !important;
     }
     .col-lg-4 {
         &:last-child {
