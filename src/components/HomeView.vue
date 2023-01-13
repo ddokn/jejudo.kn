@@ -183,7 +183,7 @@
             {
               'image': require("../assets/main03.jpeg"),
               'title': 'Daily Record',
-              'sub': '느낀 것(준비 중)',
+              'sub': '느낀 것',
             },
           ]
         }
