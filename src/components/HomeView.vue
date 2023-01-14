@@ -17,7 +17,7 @@
         </section>
   
         <section class="py-lg-20">
-          <div class="container-lg px-4 px-lg-0 size-md">
+          <div class="container-lg px-lg-0 size-md">
               <div class="row g-6">
                   <div class="col-lg-4 col-md-4 col-sm-4 col-12" v-for="(a, i) in link" :key="i">
                       <div class="card rounded-3 mb-14">

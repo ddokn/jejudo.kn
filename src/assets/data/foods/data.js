@@ -879,7 +879,7 @@ export default [
 		summary : '아주아주 애정하는 곳. 재료소진이 매우 빠른 편이라 오픈시간에 맞춰 가는걸 추천',
 		address: '제주 제주시 인다5길 11-5',
 		category : '제주시',
-		last_date : '2023-01-07',
+		last_date : '2023-01-02',
 		color : '',
 		count: '7',
 		point: '5',
