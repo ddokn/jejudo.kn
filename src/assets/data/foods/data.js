@@ -30,7 +30,7 @@ export default [
 	},
 	{
 		restaurant : '제주 미담',
-		summary : '입소문에 비해 맛은 평범. 숙소와 가깝다면 한 번쯤 가볼만함',
+		summary : '소문에 비해 맛은 평범. 숙소와 가깝다면 한 번쯤 가볼만함',
 		address: '제주 제주시 관덕로11길 8-1',
 		category : '제주시',
 		last_date : '2021-01-30',
@@ -83,7 +83,7 @@ export default [
 	},
 	{
 		restaurant : '관덕정 분식',
-		summary : '분식치고는 가격대가 비싼 편으로 맛은 보통',
+		summary : '분식치고는 가격대가 비싼 편으로 맛은 쏘쏘',
 		address: '제주 제주시 관덕로8길 7-9',
 		category : '제주시',
 		last_date : '2021-03-03',
@@ -109,12 +109,12 @@ export default [
 	},
 	{
 		restaurant : '골막식당(골막국수)',
-		summary : '택시 기사님이 추천해주신 곳. 일반 국수보다 면이 두꺼운 편이며 국물이 기가막힘',
+		summary : '택시 기사님이 추천해주신 곳. 일반 국수보다 면이 두꺼운 편이로 국물, 김치가 기가막힘',
 		address: '제주 제주시 천수로 12',
 		category : '제주시',
 		last_date : '2022-03-05',
 		color : '',
-		count: '1',
+		count: '3',
 		point: '4',
 		thumbnail: [
 			'https://i.postimg.cc/26mXFNyf/7718.jpg',
@@ -123,7 +123,7 @@ export default [
 		],
 		accompany : [
 			{
-				name: '익명의 택시기사',
+				name: '익명의 택시기사님',
 				avatar: 'https://i.postimg.cc/L8H346WW/default-profile.png',
 			},
 			{
@@ -172,7 +172,7 @@ export default [
 	},
 	{
 		restaurant : '고성장터국밥',
-		summary : '저렴한 가격, 순대 비린내 전혀 없는 완벽한 맛',
+		summary : '저렴한 가격, 비린내 전혀 없는 완벽한 맛',
 		address: '제주 서귀포시 성산읍 고성동서로45번길 19',
 		category : '성산·우도',
 		last_date : '2021-03-24',
@@ -198,7 +198,7 @@ export default [
 	},
 	{
 		restaurant : '순희밥상',
-		summary : '제주식 정갈한 집 밥 느낌. 조용한 동네 깔끔한 내부',
+		summary : '제주식 정갈한 집 밥 느낌. 조용한 동네. 깔끔한 내부',
 		address: '제주 제주시 구좌읍 종달로5길 38',
 		category : '구좌·월정',
 		last_date : '2021-03-24',
@@ -300,7 +300,7 @@ export default [
 	},
 	{
 		restaurant : '바다를 본 돼지',
-		summary : '흑돼지, 오션 뷰 맛집, 요즘은 유명해졌는지 웨이팅이 꽤 긴편',
+		summary : '흑돼지, 오션 뷰 맛집, 요즘은 유명해졌는지 웨이팅이 꽤나 긴 편',
 		address: '제주특별자치도 서귀포시 칠십리로 123 2층',
 		category : '서귀포',
 		last_date : '2022-09-30',
@@ -341,7 +341,7 @@ export default [
 	},
 	{
 		restaurant : '노라바 해물라면',
-		summary : '두번째 방문때 달라진 맛에 실망. 애월해안도로 근처',
+		summary : '두 번째 방문 때 달라진 맛에 실망. 애월해안도로 근처라 뷰는 만점',
 		address: '제주 제주시 애월읍 구엄길 100',
 		category : '애월',
 		last_date : '2022-02-26',
@@ -394,21 +394,29 @@ export default [
 				avatar: 'https://i.postimg.cc/h4XyHCnR/Kakao-Talk-Photo-2023-01-12-15-25-05.jpg',
 			},
 			{
-        name: '김도근',
-        avatar: '',
-      },
+				name: '김도근',
+				avatar: '',
+			},
+					{
+				name: '정은봉',
+				avatar: '',
+			},
+					{
+				name: '송선용',
+				avatar: '',
+			},
+					{
+				name: '이성령',
+				avatar: '',
+			},
 			{
-        name: '정은봉',
-        avatar: '',
-      },
+				name: '엄장원',
+				avatar: '',
+			},
 			{
-        name: '송선용',
-        avatar: '',
-      },
-			{
-        name: '이성령',
-        avatar: '',
-      }
+				name: '김민희',
+				avatar: '',
+			}
 		]
 	},
 	{
@@ -438,7 +446,7 @@ export default [
 	},
 	{
 		restaurant : '차돌집',
-		summary : '사람만 많지 않으면 더 자주 갔을 만한 차돌 찐찐 맛집',
+		summary : '사람만 많지 않으면 더 자주 갔을 법한 차돌 찐찐 맛집',
 		address : '제주 제주시 신대로10길 29',
 		category : '제주시',
 		last_date : '2022-04-21',
@@ -535,7 +543,7 @@ export default [
 	},
 	{
 		restaurant : '홍보석',
-		summary : '면이 일반적인 중식면 보단 얇은편, 비빔 짬뽕 추천',
+		summary : '면이 일반적인 중식 면보단 얇은 편, 비빔 짬뽕 추천',
 		address : '제주 제주시 비월길 5',
 		category : '제주시',
 		last_date : '2022-05-20',
@@ -588,7 +596,7 @@ export default [
 	},
 	{
 		restaurant : '성산연화',
-		summary : '직원분들이 친절, 와인을 좋아한다면 한번쯤 갈만한 곳',
+		summary : '직원분들이 친절, 와인을 좋아한다면 한 번쯤 갈만한 곳',
 		address : '제주특별자치도 서귀포시 성산읍 성산중앙로 22',
 		category : '성산·우도',
 		last_date : '2022-06-11',
@@ -684,7 +692,7 @@ export default [
 	},
 	{
 		restaurant : '제라한보쌈',
-		summary : '차마 제주 놀러온 사람한테 보쌈집 추천해주긴 좀 그렇지만 그럼에도 꼭 갔으면 하는 곳',
+		summary : '차마 제주까지 놀러온 사람한테 보쌈집 추천해주긴 좀 그렇지만 그럼에도 꼭 갔으면 하는 곳',
 		address : '제주 제주시 정존1길 33',
 		category : '제주시',
 		last_date : '2022-08-02',
@@ -712,7 +720,7 @@ export default [
 	},
 	{
 		restaurant : '이자카야 상상',
-		summary : '분위기 좋고 맛 좋고',
+		summary : '분위기 좋고 맛 좋고 상상 이상',
 		address : '제주 제주시 조천읍 신북로 487 상상 함덕점',
 		category : '조천·함덕',
 		last_date : '2022-08-13',
@@ -750,7 +758,7 @@ export default [
 	},
 	{
 		restaurant : '대굴대굴',
-		summary : '평소엔 운영안하다 겨울철(10월 ~ 3월)에만 오픈. 올해엔 너무 많이가서 질려버렸지만 내년에 또 갈래',
+		summary : '겨울철(10월 ~ 3월)에만 오픈. 올해는 너무 많이가서 질려버렸지만 내년에 또 갈래',
 		category : '제주시',
 		address: '제주특별자치도 제주시 오복2길 17',
 		last_date : '2022-11-11',
@@ -787,7 +795,7 @@ export default [
 	},
 	{
 		restaurant : '태광식당',
-		summary : '한지 주물럭과 돼지 주물럭을 같이 시켜서 먹는걸 추천',
+		summary : '한지 주물럭과 돼지 주물럭을 같이 시켜서 먹는 걸 추천. 맵지 않아 아이들과 가도 좋을 듯',
 		address: '제주 제주시 탑동로 142',
 		category : '제주시',
 		last_date : '2023-01-04',
@@ -820,7 +828,7 @@ export default [
 	},
 	{
 		restaurant : '만금',
-		summary : '잔말말고 제주 어디에있던 여긴 꼭 가보길. 고사리 육개장 미뜨엇',
+		summary : '잔말말고 제주 어디에있던 여긴 꼭 가보길. 안가면 손해임',
 		address: '제주 제주시 도남로15길 11',
 		category : '제주시',
 		last_date : '2022-10-04',
@@ -871,7 +879,7 @@ export default [
 		summary : '아주아주 애정하는 곳. 재료소진이 매우 빠른 편이라 오픈시간에 맞춰 가는걸 추천',
 		address: '제주 제주시 인다5길 11-5',
 		category : '제주시',
-		last_date : '2022-01-04',
+		last_date : '2023-01-07',
 		color : '',
 		count: '7',
 		point: '5',
