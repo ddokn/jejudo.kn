@@ -6,6 +6,11 @@
     
     <FooterBar/>
 
+    <a id="scrollTopBtn" href="#top" class="btn-scroll-top" data-scroll="">
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2 text-primary">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up text-white fs-5"></i>
+    </a>
+    
 </template>
 
 <script>
@@ -18,10 +23,9 @@ export default {
   name: 'App',
   components: {
     NavBar,
-    FooterBar
+    FooterBar,
   },
   data(){
-
     return {
       menu: ['먹은 곳', '가본 곳', '느낀 것'],
       weather: [],
@@ -43,8 +47,8 @@ export default {
   },
   mounted(){
       this.getWeather();
-      Array.from(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-      .forEach(tooltipNode => new Tooltip(tooltipNode))
+      this.gotoTop();
+      this.tooltip();
   },
   methods: {
     getWeather(){
@@ -81,6 +85,19 @@ export default {
         this.apiLoad = false;
         console.log(error);
       });
+    },
+    gotoTop(){
+      const scrollBtn = document.getElementById('scrollTopBtn');
+      window.addEventListener('scroll', function(){
+        if ( window.scrollY > 60 ) {
+          scrollBtn.classList.add('show');
+        } else {
+          scrollBtn.classList.remove('show');
+        }
+      })
+    },
+    tooltip(){
+      Array.from(document.querySelectorAll('[data-bs-toggle="tooltip"]')).forEach(tooltipNode => new Tooltip(tooltipNode))
     }
   },
 }
