@@ -37,6 +37,7 @@ export default {
     props: {
       data: Array,
       arrayCount: Number,
+      select: String,
     },
     mounted(){
         this.findFirst();
@@ -45,6 +46,9 @@ export default {
         arrayCount(){
             this.findFirst();
             this.count = 1
+        },
+        select(){
+            this.findFirst();
         }
     },
     methods: {
@@ -91,6 +95,11 @@ export default {
         &:focus {
             opacity: 1;
         }
+    }
+}
+@media (max-width: 991px) {
+    .carousel-item {
+        min-height: 400px;
     }
 }
 </style>

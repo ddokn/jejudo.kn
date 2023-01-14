@@ -1,5 +1,5 @@
 <template>
-  <nav class="container size-md" aria-label="breadcrumb">
+  <nav class="container-lg size-md" aria-label="breadcrumb">
     <ol class="breadcrumb mb-0 pt-5">
       <li class="breadcrumb-item">
         <a class="text-muted" href="/">
@@ -75,7 +75,7 @@
                   <span class="hidden-xs">최근 방문일 : </span>{{ data[i].last_date }}
                 </span>
               </div>
-              <h3 class="h4">
+              <h3 class="h4 mb-1">
                 <a
                 href="javascript:;"
                 @click="getArray(i)"
@@ -85,16 +85,14 @@
                   {{ data[i].restaurant }}
                 </a>
               </h3>
-              <div>
-                <p class="mb-1">{{ data[i].summary }}</p>
-                <p class="fs-sm text-muted">
-                  <span ref="addressTxt">{{ data[i].address }}</span>
-                  <a href="javascript:;" class="py-1 px-1" @click="txtCopy(i)">
-                    <i class="bx bx-copy"></i>
-                    <input type="hidden" :id="'testing-code'+[i]" :value="data[i].address">
-                  </a>
-                </p>
-              </div>
+              <p class="fs-sm text-muted">
+                <span ref="addressTxt">{{ data[i].address }}</span>
+                <a href="javascript:;" class="py-1 px-1" @click="txtCopy(i)">
+                  <i class="bx bx-copy"></i>
+                  <input type="hidden" :id="'testing-code'+[i]" :value="data[i].address">
+                </a>
+              </p>
+              <p class="mb-0">{{ data[i].summary }}</p>
               <hr class="my-4">
               <div class="d-flex align-items-center justify-content-between">
                 <div class="d-flex align-items-center fw-bold text-dark text-decoration-none me-3">
@@ -105,7 +103,7 @@
                     >
                   </div>
                   <div>
-                    <span class="fs-sm text-muted" style="display: block; font-size: 12px !important; font-weight: 400; margin-bottom: -4px;">동행 &middot; 추천</span>
+                    <span class="fs-sm text-muted" style="display: block; font-size: 12px !important; font-weight: 400;">동행 &middot; 추천</span>
                     {{ data[i].accompany[0]?.name }}
                     <span v-if="data[i].accompany.length > 1"> 
                       외 {{ data[i].accompany.length - 1 }}명
@@ -143,7 +141,7 @@
           <div class="position-relative h-100">
               <a
               data-bs-toggle="modal"
-              data-bs-target="#exampleModalFullscreenLg"
+              data-bs-target="#modal"
               href="javascript:;"
               class="position-absolute top-0 start-0 w-100 h-100"
               aria-label="Read more"
@@ -190,7 +188,7 @@
       <button class="btn btn-primary" @click="getMore" type="button" style="width: 200px">더보기</button>
     </div>
   </section>
-  <DetailModal :data="data" :arrayCount="arrayCount"/>
+  <DetailModal :data="data" :arrayCount="arrayCount" :select="select"/>
 </template>
 <script>
 import foodData from '@/assets/data/foods/data'
@@ -214,6 +212,7 @@ export default {
         pageSize: 6,
         moreBtn: true,
         arrayCount: 0,
+        select: ''
       }
     },
     mounted(){
@@ -245,6 +244,7 @@ export default {
         } else if ( e.target.value == 'people' ) {
           this.peopleSort();
         }
+        this.select = e.target.value;
       },
       pointSort(){
         this.data.sort(function(a,b){
@@ -315,6 +315,7 @@ export default {
   .bx {
     font-size: 14px;
     opacity: .8;
+    vertical-align: middle;
   }
 }
 </style>
