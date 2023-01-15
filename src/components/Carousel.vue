@@ -1,5 +1,5 @@
 <template>
-    <div id="carouselControls" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+    <div id="carouselControls" class="carousel slide pointer-event" data-bs-ride="carousel" data-bs-touch="true">
         <div class="carousel-inner">
             <div 
             class="carousel-item"
