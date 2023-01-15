@@ -115,7 +115,7 @@ export default [
 		last_date : '2022-03-05',
 		color : '',
 		count: '3',
-		point: '4',
+		point: '3',
 		thumbnail: [
 			'https://i.postimg.cc/26mXFNyf/7718.jpg',
 			'https://i.postimg.cc/g03TZ2YD/IMG-3379.jpg',
@@ -178,7 +178,7 @@ export default [
 		last_date : '2021-03-24',
 		color : '',
 		count: '2',
-		point: '5',
+		point: '4',
 		thumbnail: [
 			'https://i.postimg.cc/x1PBqdtS/IMG-1151.jpg',
 			'https://i.postimg.cc/9z5YYGXN/IMG-1148.jpg',
@@ -204,7 +204,7 @@ export default [
 		last_date : '2021-03-24',
 		color : '',
 		count: '1',
-		point: '4',
+		point: '3.5',
 		thumbnail: [
 			'https://i.postimg.cc/gkbMR6S6/IMG-1238.jpg',
 			'https://i.postimg.cc/g2N4ftYv/IMG-1241.jpg',
@@ -305,7 +305,7 @@ export default [
 		last_date : '2022-09-30',
 		color : '',
 		count: '5',
-		point: '4',
+		point: '3.5',
 		thumbnail: [
 			'https://i.postimg.cc/fTVps023/IMG-3009.jpg',
 			'https://i.postimg.cc/NjTn9vwB/IMG-3011.jpg',
@@ -346,7 +346,7 @@ export default [
 		last_date : '2022-02-26',
 		color : '',
 		count: '2',
-		point: '3',
+		point: '2',
 		thumbnail: [
 			'https://i.postimg.cc/t4WVL2FB/IMG-3266.jpg',
 			'https://i.postimg.cc/6pJX10W6/IMG-1772.jpg',
@@ -382,7 +382,7 @@ export default [
 		last_date : '2022-09-26',
 		color : '',
 		count: '3',
-		point: '5',
+		point: '4',
 		thumbnail: [
 			'https://i.postimg.cc/C50bW8kd/IMG-3309.jpg',
 			'https://i.postimg.cc/c17RfDG3/IMG-3310.jpg',
@@ -428,7 +428,7 @@ export default [
 		last_date : '2022-04-18',
 		color : '',
 		count: '1',
-		point: '5',
+		point: '3.5',
 		thumbnail: [
 			'https://i.postimg.cc/XYcHYwnK/IMG-3509.jpg',
 			'https://i.postimg.cc/YCkRZhQv/IMG-3510.jpg',
@@ -700,7 +700,7 @@ export default [
 		last_date : '2022-08-02',
 		color : '',
 		count: '3',
-		point: '5',
+		point: '4',
 		thumbnail: [
 			'https://i.postimg.cc/L6gMy02y/IMG-4449.jpg',
 			'https://i.postimg.cc/kgxPC6VK/IMG-4450.jpg',
@@ -767,7 +767,7 @@ export default [
 		last_date : '2022-11-11',
 		color : '',
 		count: '4',
-		point: '5',
+		point: '4.5',
 		thumbnail: [
 			'https://i.postimg.cc/8cFx0jQF/IMG-5053.jpg',
 			'https://i.postimg.cc/TYc6qkW5/Kakao-Talk-20230114-230501965.jpg',
@@ -886,7 +886,7 @@ export default [
 		category : '제주시',
 		last_date : '2023-01-02',
 		color : '',
-		count: '7',
+		count: '4',
 		point: '5',
 		thumbnail: [
 			'https://i.postimg.cc/FsZDLn21/2.jpg',
