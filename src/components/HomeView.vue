@@ -84,7 +84,7 @@
         </section>
         <!-- <hr> -->
         <section class="bg-light "> <!-- bg-light -->
-          <div class="container-lg px-4 px-lg-0 pt-3 pb-5 size-md">
+          <div class="container-lg px-4 pt-3 pb-5 size-md">
             <div class="row text-center">
               <div class="col-12">
                 <h2 class="mt-4 mb-1 fw-bold display-5">이 사이트는요</h2>
