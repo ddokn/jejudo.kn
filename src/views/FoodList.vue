@@ -75,7 +75,7 @@
                   <span class="hidden-xs">최근 방문일 : </span>{{ data[i].last_date }}
                 </span>
               </div>
-              <h3 class="h4 mb-1">
+              <h3 class="h4 mb-1 fw-bold">
                 <a
                 href="javascript:;"
                 data-bs-toggle="modal"
@@ -159,7 +159,7 @@
                   <span class="hidden-xs">최근 방문일 : </span>{{ data[i].last_date }}
                 </span>
               </div>
-              <h3 class="h5 mb-0">
+              <h3 class="h5 mb-0 fw-bold">
                 <a 
                 href="javascript:;"
                 data-bs-toggle="modal"
