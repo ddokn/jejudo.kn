@@ -10,8 +10,8 @@ export default [
 		point: '5',
 		thumbnail: [
 			'https://i.postimg.cc/MZ7Gt7G0/2.jpg',
-			'https://i.postimg.cc/dVtDhhw2/1.jpg',
 			'https://i.postimg.cc/d3jt1YfN/3.jpg',
+			'https://i.postimg.cc/dVtDhhw2/1.jpg',
 		],
 		accompany : [
 			{
@@ -207,9 +207,8 @@ export default [
 		point: '4',
 		thumbnail: [
 			'https://i.postimg.cc/gkbMR6S6/IMG-1238.jpg',
-			'https://i.postimg.cc/Xv676LQY/IMG-1237.jpg',
 			'https://i.postimg.cc/g2N4ftYv/IMG-1241.jpg',
-
+			'https://i.postimg.cc/Xv676LQY/IMG-1237.jpg',
 		],
 		accompany : [
 			{
@@ -387,6 +386,8 @@ export default [
 		thumbnail: [
 			'https://i.postimg.cc/C50bW8kd/IMG-3309.jpg',
 			'https://i.postimg.cc/c17RfDG3/IMG-3310.jpg',
+			'https://i.postimg.cc/0Qmg6ZsQ/Kakao-Talk-20230114-230500063.jpg',
+			'https://i.postimg.cc/jjB0dmBm/Kakao-Talk-20230114-230501340.jpg',
 		],
 		accompany : [
 			{
@@ -459,6 +460,7 @@ export default [
 			'https://i.postimg.cc/vZx4MzMT/IMG-3523.jpg',
 			'https://i.postimg.cc/fbxkSRVh/IMG-3524.jpg',
 			'https://i.postimg.cc/CLQRW239/IMG-3525.jpg',
+			'https://i.postimg.cc/SxTbHJdy/Kakao-Talk-20230114-230458538.jpg'
 		],
 		accompany : [
 			{
@@ -702,6 +704,7 @@ export default [
 		thumbnail: [
 			'https://i.postimg.cc/L6gMy02y/IMG-4449.jpg',
 			'https://i.postimg.cc/kgxPC6VK/IMG-4450.jpg',
+			'https://i.postimg.cc/vm4wyb25/Kakao-Talk-20230114-230459252.jpg'
 		],
 		accompany : [
 			{
@@ -767,6 +770,8 @@ export default [
 		point: '5',
 		thumbnail: [
 			'https://i.postimg.cc/8cFx0jQF/IMG-5053.jpg',
+			'https://i.postimg.cc/TYc6qkW5/Kakao-Talk-20230114-230501965.jpg',
+			'https://i.postimg.cc/c4WW3q6N/Kakao-Talk-20230114-230502433.jpg',
 			'https://i.postimg.cc/HnfFDdd6/IMG-5062.jpg',
 			'https://i.postimg.cc/7PcFTM0S/IMG-5065.jpg',
 		],
@@ -910,6 +915,7 @@ export default [
 		point: '5',
 		thumbnail: [
 			'https://i.postimg.cc/T15qVJhp/IMG-4972.jpg',
+			'https://i.postimg.cc/CxLVvjjP/Kakao-Talk-20230114-230503060.jpg',
 			'https://i.postimg.cc/z3mw0HRp/IMG-4973.jpg',
 			'https://i.postimg.cc/hjj0jBB8/IMG-4974.jpg',
 		],

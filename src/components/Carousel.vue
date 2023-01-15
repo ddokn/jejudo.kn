@@ -10,17 +10,19 @@
                 <img :src="thumbnail" class="d-block w-100" alt="">
             </div>
         </div>
-        <button @click="getPrev" class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+        <button @click="swiperCount" class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button @click="getNext" class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+        <button @click="swiperCount" class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
         <div class="image-count">
             <span class="text-white fs-sm">
-            {{ this.count }} / {{ data[arrayCount].thumbnail.length }}
+                <span id="Count">{{ count }}</span>
+                 / 
+                 <span>{{ data[arrayCount].thumbnail.length }}</span>
             </span>
         </div>
     </div>
@@ -41,11 +43,11 @@ export default {
     },
     mounted(){
         this.findFirst();
+        this.swiperCount()
     },
     watch: {
         arrayCount(){
             this.findFirst();
-            this.count = 1
         },
         select(){
             this.findFirst();
@@ -58,17 +60,12 @@ export default {
                 firstChild.classList.add('active');
             }, 100)
         },
-        getPrev(){
-            this.count = this.count-1
-            if ( 0 >= this.count ) {
-                this.count = this.data[this.arrayCount].thumbnail.length
-            }
-        },
-        getNext(){
-            this.count = this.count+1
-            if ( this.data[this.arrayCount].thumbnail.length < this.count ) {
-                this.count = 1
-            }
+        swiperCount(){
+            let myCarousel = document.getElementById('carouselControls');
+            myCarousel.addEventListener('slide.bs.carousel', function (e) {
+                this.count = e.to + 1;
+                document.getElementById('Count').innerText = this.count
+            });
         }
     }
 }
