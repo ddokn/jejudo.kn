@@ -1,7 +1,7 @@
 @import './variables.scss';
 @import 'bootstrap/scss/bootstrap';
-// @import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Hammersmith+One&display=swap');
+
 
 @keyframes scrollDown {
     0% {
@@ -23,6 +23,9 @@ a {
 .bd-gutter {
     margin-left: 3rem;
     margin-right: 3rem;
+}
+body {
+    font-family: 'NanumSquareRound', 'Malgun Gothic', 'dotum', sans-serif;
 }
 header {
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%), inset 0 -1px 0 rgb(255 255 255 / 15%);
@@ -103,7 +106,7 @@ hr {
     }
 }
 .text-sm {
-    font-size: 0.8rem !important;
+    font-size: 1rem !important;
 }
 .btn-outline-white {
     border-color: $border-color;
