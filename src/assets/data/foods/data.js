@@ -838,7 +838,7 @@ export default [
 		category : '제주시',
 		last_date : '2022-10-04',
 		color : '',
-		count: '5',
+		count: '4',
 		point: '5',
 		thumbnail: [
 			'https://i.postimg.cc/vmXzbmpH/IMG-3935.jpg',

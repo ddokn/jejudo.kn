@@ -28,10 +28,10 @@
                 </div>
                 <select class="form-select" @change="selectValue($event)">
                   <option selected disabled hidden>정렬</option>
-                  <option value="point">개인 별점 순</option>
-                  <option value="people">동행 &middot; 추천인 순</option>
-                  <option value="count">방문 횟수 순</option>
                   <option value="date">최근 방문 일자 순</option>
+                  <option value="point">개인 별점 순</option>
+                  <option value="count">방문 횟수 순</option>
+                  <option value="people">동행 &middot; 추천인 순</option>
                 </select>
               </div>
             </div>
@@ -321,6 +321,12 @@ export default {
   .bx {
     font-size: 14px;
     opacity: .8;
+    vertical-align: middle;
+  }
+}
+.nav-link {
+  .bx {
+    line-height: inherit;
     vertical-align: middle;
   }
 }
