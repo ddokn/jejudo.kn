@@ -2,9 +2,9 @@
   <header class="sticky-top navbar-expand-lg bg-primary">
     <nav class="navbar navbar-dark container-lg size-md">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/">
-          <img src="../assets/favicon.png" width="20">
-      </a>
+      <router-link class="navbar-brand" to="/">
+        <img src="../assets/favicon.png" width="20">  
+      </router-link>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -17,7 +17,7 @@
 
           <ul class="navbar-nav flex-grow-1 pe-3">
             <li class="nav-item" v-for="(a, i) in menu" :key="a">
-              <a class="nav-link" :href=" link[i] ">{{  menu[i] }}</a>
+              <router-link class="nav-link" :to="link[i]">{{  menu[i] }}</router-link>
             </li>
           </ul>
 

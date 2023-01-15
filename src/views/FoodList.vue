@@ -2,9 +2,9 @@
   <nav class="container-lg size-md" aria-label="breadcrumb">
     <ol class="breadcrumb mb-0 pt-5">
       <li class="breadcrumb-item">
-        <a class="text-muted" href="/">
+        <router-link class="text-muted" to="/">
           <i class="bx bx-home-alt fs-lg me-1"></i>Home
-        </a>
+        </router-link>
       </li>
       <li class="breadcrumb-item active text-primary fw-bold" aria-current="page">먹은 곳({{ data.length }})</li>
     </ol>

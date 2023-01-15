@@ -22,21 +22,24 @@
                   <div class="col-lg-4 col-md-4 col-sm-4 col-12" v-for="(a, i) in link" :key="i">
                       <div class="card rounded-3 mb-14">
                           <div class="px-lg-8 px-4 ">
-                              <a :href="link[i]">
-                                <img :src=" cardData[i].image " alt="" class="mt-n8 img-fluid w-100 img-hover rounded-3">
-                              </a>
+                            <router-link :to="link[i]">
+                              <img :src=" cardData[i].image " alt="" class="mt-n8 img-fluid w-100 img-hover rounded-3">
+                            </router-link>
                           </div>
                           <div class="card-body px-4 py-4 p-md-8">
-                              <div class="pb-3 mb-0">
-                                  <h2 class="mb-1 fw-bold display-5"> <a :href="link[i]" class="text-inherit">{{ cardData[i].title }}</a>
-                                  </h2>
-                                  <p class="fs-4 mb-0 text-sm">{{ cardData[i].sub }}</p>
-                              </div>
-                              <div class="d-grid">
-                                  <a :href="link[i]"  class="btn btn-outline-white">
-                                    더보기 <i class="bi bi-arrow-right"></i>
-                                  </a>
-                              </div>
+                            <div class="pb-3 mb-0">
+                                <h2 class="mb-1 fw-bold display-5">
+                                  <router-link class="text-inherit" :to="link[i]">
+                                    {{ cardData[i].title }}
+                                  </router-link>
+                                </h2>
+                                <p class="fs-4 mb-0 text-sm">{{ cardData[i].sub }}</p>
+                            </div>
+                            <div class="d-grid">
+                              <router-link class="btn btn-outline-white" :to="link[i]">
+                                더보기 <i class="bi bi-arrow-right"></i>
+                              </router-link>
+                            </div>
                           </div>
                       </div>
                   </div>
