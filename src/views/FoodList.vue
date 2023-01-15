@@ -12,7 +12,7 @@
   <section class="container-lg size-md mt-4 mb-lg-5 pt-lg-2 pb-5">
     <div class="row align-items-end gy-3 mb-4 pb-lg-3 pb-1">
         <div class="col-lg-5 col-md-4">
-          <h1 class="mb-2 mb-md-0">Food's List</h1>
+          <h1 class="mb-2 mb-md-0 fw-bold">Food's List</h1>
         </div>
         <div class="col-lg-7 col-md-8">
           <div class="row gy-2 right">
