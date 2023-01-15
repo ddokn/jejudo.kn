@@ -99,8 +99,6 @@ export default {
     tooltip(){
       Array.from(document.querySelectorAll('[data-bs-toggle="tooltip"]')).forEach(tooltipNode => new Tooltip(tooltipNode))
     },
-    getPageHit(){
-    },
   },
 }
 </script>
