@@ -3,7 +3,7 @@
     <nav class="navbar navbar-dark container-lg size-md">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">
-          <img src="../assets/logo.svg" width="20">
+          <img src="../assets/favicon.png" width="20">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
         <span class="navbar-toggler-icon"></span>
