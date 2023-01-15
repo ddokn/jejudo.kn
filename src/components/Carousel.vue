@@ -1,5 +1,5 @@
 <template>
-    <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselControls" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
         <div class="carousel-inner">
             <div 
             class="carousel-item"
@@ -97,6 +97,14 @@ export default {
 @media (max-width: 991px) {
     .carousel-item {
         min-height: 400px;
+    }
+    .carousel-control,
+    .carousel-control {
+        &-next,
+        &-prev {
+            width: 15% !important;
+            opacity: 1 !important;    
+        }
     }
 }
 </style>
