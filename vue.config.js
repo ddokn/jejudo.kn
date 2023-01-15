@@ -3,5 +3,5 @@
 //   transpileDependencies: true
 // })
 module.exports = {
-  publicPath: '/'
+  publicPath: '/jejudo.kn/'
 }
