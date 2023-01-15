@@ -6,7 +6,7 @@
           <i class="bx bx-home-alt fs-lg me-1"></i>Home
         </a>
       </li>
-      <li class="breadcrumb-item active text-primary" aria-current="page">먹은 곳({{ data.length }})</li>
+      <li class="breadcrumb-item active text-primary fw-bold" aria-current="page">먹은 곳({{ data.length }})</li>
     </ol>
   </nav>
   <section class="container-lg size-md mt-4 mb-lg-5 pt-lg-2 pb-5">
@@ -78,9 +78,9 @@
               <h3 class="h4 mb-1">
                 <a
                 href="javascript:;"
-                @click="getArray(i)"
                 data-bs-toggle="modal"
                 data-bs-target="#modal"
+                @click="getArray(i)"
                 >
                   {{ data[i].restaurant }}
                 </a>
@@ -145,6 +145,7 @@
               href="javascript:;"
               class="position-absolute top-0 start-0 w-100 h-100"
               aria-label="Read more"
+              @click="getArray(i)"
               >
               </a>
             <img :src="data[i].thumbnail[0]" class="card-img-top h-100" alt="Image" style="object-fit: cover;">
@@ -159,7 +160,12 @@
                 </span>
               </div>
               <h3 class="h5 mb-0">
-                <a href="javascript:;">
+                <a 
+                href="javascript:;"
+                data-bs-toggle="modal"
+                data-bs-target="#modal"
+                @click="getArray(i)"
+                >
                   {{ data[i].restaurant }}
                 </a>
               </h3>
