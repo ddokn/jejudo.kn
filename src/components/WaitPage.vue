@@ -5,17 +5,17 @@
 
             <!-- Animation -->
             <div class="col-xl-6 col-md-7 order-md-2 ms-n5">
-                <img src="../assets/wait.svg" width="100%">
+                <img src="../assets/wait.svg" style="width: 100%">
             </div>
 
             <!-- Text -->
             <div class="col-md-5 offset-xl-1 order-md-1">
                 <h1 class="display-1 mb-sm-4 mt-n4 mt-sm-n5 fw-bold">Coming Soon</h1>
                 <p class="mb-md-5 mb-4 mx-md-0 mx-auto pb-2 lead">언젠가.. 만들 예정</p>
-                <a href="/" class="btn btn-lg btn-primary shadow-primary w-sm-auto w-100">
-                <i class="bx bx-home-alt me-2 ms-n1 lead"></i>
-                Go to homepage
-                </a>
+                <router-link to="/" class="btn btn-lg btn-primary shadow-primary w-sm-auto w-100">
+                    <i class="bx bx-home-alt me-2 ms-n1 lead"></i>
+                    Go to homepage
+                </router-link>
             </div>
             </div>
         </div>

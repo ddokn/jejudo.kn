@@ -80,15 +80,25 @@ export default {
 </script>
 
 <style lang="scss">
-    .navbar {
-        height: 62px;
-        &-toggler {
-            &:focus {
-                box-shadow: none;
-            }
-        }
-        .navbar-nav {
-            align-items: center;
+.navbar {
+    height: 62px;
+    &-toggler {
+        &:focus {
+            box-shadow: none;
         }
     }
+    .navbar-nav {
+        align-items: center;
+    }
+}
+@media (max-width: 991px) {
+  .offcanvas {
+    max-width: 80% !important;
+    .navbar-nav {
+      padding-right: 0 !important;
+      margin-top: 1rem !important;
+      margin-bottom: 3rem !important;
+    }
+  }
+}
 </style>
