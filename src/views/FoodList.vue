@@ -89,7 +89,7 @@
                 <span ref="addressTxt">{{ data[i].address }}</span>
                 <a href="javascript:;" class="py-1 px-1" @click="txtCopy(i)">
                   <i class="bx bx-copy"></i>
-                  <input type="hidden" :id="'testing-code'+[i]" :value="data[i].address">
+                  <input type="hidden" style="font-size: 16px !important;" :id="'testing-code'+[i]" :value="data[i].address">
                 </a>
               </p>
               <p class="mb-0">{{ data[i].summary }}</p>
