@@ -628,7 +628,7 @@ export default [
 	{
 		restaurant : '쇠소깍횟집',
 		summary : '제주시 사는 사람치고 여기 모르는 사람 못 봄',
-		address : '제주특별자치도 서귀포시 성산읍 성산중앙로 22',
+		address : '제주 제주시 연수로4길 1',
 		category : '제주시',
 		last_date : '2022-06-22',
 		color : '',
