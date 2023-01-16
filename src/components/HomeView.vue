@@ -47,11 +47,11 @@
           </div>
         </section>
 
-        <section class="bg-light" style="padding-bottom: 138px">
+        <section class="bg-light" style="padding-bottom: 146px">
           <div class="container-lg px-4 pt-4 pb-5 size-md">
             <div class="row text-center">
               <div class="col-12">
-                <h2 class="mt-4 mb-1 fw-bold display-5">이 사이트는요</h2>
+                <h2 class="mt-5 mb-2 fw-bold display-5">이 사이트는요</h2>
                 <p class="fs-4 mb-4">이런 것들로 뚝딱뚝딱 만들었음</p>
               </div>
             </div>
@@ -99,7 +99,7 @@
         </section>
   
        <section class="position-relative">
-        <div class="half-section-block container-lg size-md position-absolute top-50 start-0 end-0" style="margin-top: -138px;">
+        <div class="half-section-block container-lg size-md position-absolute top-50 start-0 end-0" style="margin-top: -146px;">
             <div class="shape-parent">
               <div class="py-60 px-30 position-relative rounded-4 overflow-hidden z-index-1">
                 <div class="background">
@@ -108,12 +108,12 @@
                         <img class="jarallax-img" src="../assets/main_section_bg.jpeg" alt="">
                     </div>
                   </div>
-                  <div class="background-color" style="background-color: #481FA0; opacity: .8;"></div>
+                  <div class="background-color" style="background-color: #481FA0; opacity: .9;"></div>
                 </div>
                 <div class="row">
                   <div class="col-lg-8 offset-lg-2 text-center">
-                    <h2 class="mb-3 text-white display-5" >저는 말이죠</h2>
-                    <p class="mb-4 px-lg-70 text-white fs-4">생산성을 높이는 도구에 대한 관심이 많고, 익히는 속도가 빠른 편입니다.<br class="hidden-xs"/> 때때로 꿈에서 문제를 해결하곤 합니다.</p>
+                    <h2 class="mb-2 text-white display-5" >저는 말이죠</h2>
+                    <p class="mb-5 px-lg-70 text-white fs-4">생산성을 높이는 도구에 대한 관심이 많고, 익히는 속도가 빠른 편입니다.<br class="hidden-xs"/> 때때로 꿈에서 문제를 해결하곤 합니다.</p>
                     <div class="animated">
                         <!-- Button-->
                       <a class="btn btn-md btn-primary rounded-5 py-2 px-5" href="javascript:;" target="_self">이력서(링크)</a>
@@ -125,7 +125,7 @@
           </div>
        </section>
 
-        <section style="padding-top: 138px;">
+        <section style="padding-top: 146px;">
           <div class="container-lg py-6">
             <div class="row">
               <div class="col-12 text-center">
