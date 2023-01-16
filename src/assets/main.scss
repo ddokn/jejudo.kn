@@ -237,6 +237,9 @@ footer {
 .shape-parent {
     position: relative;
     z-index: 0;
+    .rounded-4 {
+        border-radius: 1rem !important;
+    }
 }
 .py-60 {
     padding-top: 60px !important;
