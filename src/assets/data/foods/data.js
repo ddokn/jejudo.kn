@@ -314,19 +314,19 @@ export default [
 		accompany : [
 			{
         name: '김민희',
-        avatar: 'https://i.postimg.cc/4yGnsn32/IMG-5041.jpg',
+        avatar: 'https://i.postimg.cc/d36N4Xv9/Eu-H4fyc-UYAI2-T7b.jpg',
       },
 			{
         name: '이주승',
-        avatar: 'https://i.postimg.cc/L8H346WW/default-profile.png',
+        avatar: '',
       },
 			{
         name: '강진현',
-        avatar: 'https://i.postimg.cc/L8H346WW/default-profile.png',
+        avatar: '',
       },
 			{
         name: '루덴스',
-        avatar: 'https://i.postimg.cc/L8H346WW/default-profile.png',
+        avatar: '',
       },
 			{
         name: '김진선',
@@ -349,7 +349,7 @@ export default [
 		point: '2',
 		thumbnail: [
 			'https://i.postimg.cc/t4WVL2FB/IMG-3266.jpg',
-			'https://i.postimg.cc/6pJX10W6/IMG-1772.jpg',
+			'https://i.postimg.cc/0jpvs4BS/IMG-3267.jpg',
 		],
 		accompany : [
 			{
@@ -358,19 +358,19 @@ export default [
       },
 			{
         name: '김도근',
-        avatar: 'https://i.postimg.cc/h45XzZ60/IMG-5235-3.jpg',
+        avatar: '',
       },
 			{
         name: '레오',
-        avatar: 'https://i.postimg.cc/h45XzZ60/IMG-5235-3.jpg',
+        avatar: '',
       },
 			{
         name: '정은봉',
-        avatar: 'https://i.postimg.cc/h45XzZ60/IMG-5235-3.jpg',
+        avatar: '',
       },
 			{
         name: '스노우',
-        avatar: 'https://i.postimg.cc/h45XzZ60/IMG-5235-3.jpg',
+        avatar: '',
       }
 		]
 	},
@@ -938,6 +938,52 @@ export default [
 			},
 			{
 				name: '최영근',
+				avatar: '',
+			}
+		]
+	},
+	{
+		restaurant : '로즈마린',
+		summary : '야경 맛 집. 우영우 촬영지로 더 유명해짐',
+		address: '제주특별자치도 서귀포시 남성중로 13',
+		category : '서귀포',
+		last_date : '2022-03-12',
+		color : '',
+		count: '3',
+		point: '4.5',
+		thumbnail: [
+			'https://i.postimg.cc/YqMbm4d1/Kakao-Talk-Photo-2023-01-16-11-58-48.jpg',
+			'https://i.postimg.cc/ZnFHMZ5B/20221231-210944.jpg',
+			'https://i.postimg.cc/pXMfykf0/9.jpg',
+			'https://i.postimg.cc/0y870QHD/20-1.png',
+		],
+		accompany : [
+			{
+				name: '김민희',
+				avatar: 'https://i.postimg.cc/d36N4Xv9/Eu-H4fyc-UYAI2-T7b.jpg',
+			},
+			{
+				name: '김도근',
+				avatar: '',
+			},
+			{
+				name: '한효정',
+				avatar: '',
+			},
+			{
+				name: '김지영',
+				avatar: '',
+			},
+			{
+				name: '김유경',
+				avatar: '',
+			},
+			{
+				name: '민지홍',
+				avatar: '',
+			},
+			{
+				name: '안현진',
 				avatar: '',
 			}
 		]

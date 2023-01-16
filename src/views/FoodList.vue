@@ -233,6 +233,9 @@ export default {
       getMore(){
         if ( this.pageSize != this.data.length ) {
           this.pageSize += 6;
+          if ( this.pageSize > this.data.length ) {
+            this.pageSize += this.data.length - this.pageSize;
+          } 
         } else {
           alert('더 이상 리스트가 없습니다');
         }
