@@ -43,51 +43,12 @@
                           </div>
                       </div>
                   </div>
-                  <!-- <div class="col-lg-4 col-12">
-                      <div class="card  rounded-3 mb-14">
-                          <div class="px-lg-8 px-4 ">
-                              <a href="https://geeksui.codescandy.com/geeks/pages/dashboard/dashboard-analytics.html" target="_blank"> <img src="../assets/main02.jpeg" alt="" class="mt-n8 img-fluid w-100 img-hover rounded-3 "></a>
-                          </div>
-                          <div class="card-body px-4 py-4 p-md-8">
-                              <div class="pb-3 mb-0">
-                                  <h2 class="mb-1 fw-bold display-5"> <a href="#" class="text-inherit">Tourist Spot</a></h2>
-                                  <p class="fs-4 mb-0 text-sm">가본 곳</p>
-                              </div>
-                              <div class="d-grid">
-                                  <a href="https://geeksui.codescandy.com/geeks/pages/dashboard/dashboard-analytics.html" target="_blank" class="btn btn-outline-white">
-                                      더보기 <i class="bi bi-arrow-right"></i>
-                                  </a>
-                              </div>
-  
-                          </div>
-  
-                      </div>
-                  </div>
-                  <div class="col-lg-4 col-12">
-                      <div class="card rounded-3 mb-14">
-                          <div class="px-lg-8 px-4">
-                              <a href="https://geeksui.codescandy.com/geeks/pages/landings/course-lead.html" target="_blank"> <img src="../assets/main03.jpeg" alt="" class="mt-n8 img-fluid w-100 img-hover rounded-3 ">
-                              </a>
-                          </div>
-                          <div class="card-body px-lg-8 px-4 py-4 p-md-8">
-                              <div class="pb-3 mb-0">
-                                  <h2 class="mb-1 fw-bold display-5"> <a href="#" class="text-inherit ">Daily Record</a></h2>
-                                  <p class="fs-4 mb-0 text-sm">느낀 것(준비 중)</p>
-                              </div>
-                              <div class="d-grid">
-                                  <a href="https://geeksui.codescandy.com/geeks/pages/landings/course-lead.html" target="_blank" class="btn btn-outline-white">
-                                    더보기 <i class="bi bi-arrow-right"></i>
-                                  </a>
-                              </div>
-                          </div>
-                      </div>
-                  </div> -->
               </div>
           </div>
         </section>
-        <!-- <hr> -->
-        <section class="bg-light "> <!-- bg-light -->
-          <div class="container-lg px-4 pt-3 pb-5 size-md">
+
+        <section class="bg-light" style="padding-bottom: 138px">
+          <div class="container-lg px-4 pt-4 pb-5 size-md">
             <div class="row text-center">
               <div class="col-12">
                 <h2 class="mt-4 mb-1 fw-bold display-5">이 사이트는요</h2>
@@ -137,22 +98,34 @@
           </div>
         </section>
   
-        <!-- <section class="bg-light">
-          <div class="container-lg py-6">
-            <div class="row">
-              <div class="col-lg-1 d-none d-lg-block order-lg-2"></div>
-              <div class="col-lg-5 col-xl-4 pt-100 pb-60 pb-lg-160 order-lg-3">
-                <h2 class="mb-2 fw-bold display-5">teststetests</h2>
-                <p class="mb-12">Themebau is designed to look great on desktop computers, tablets and mobile devices. Every element 100% responsive &amp; retina ready.</p>
-              </div>
-              <div class="col-lg-6 order-lg-1">
-                <img class="w-100 mb-n60" src="../assets/bootstrap.svg" alt="">
+       <section class="position-relative">
+        <div class="half-section-block container-lg size-md position-absolute top-50 start-0 end-0" style="margin-top: -138px;">
+            <div class="shape-parent">
+              <div class="py-60 px-30 position-relative rounded-4 overflow-hidden z-index-1">
+                <div class="background">
+                    <div class="background-image jarallax" data-jarallax="" data-speed="0.8" style="z-index: 0;">
+                      <div class="jarallax-container">
+                        <img class="jarallax-img" src="../assets/main_section_bg.jpeg" alt="">
+                    </div>
+                  </div>
+                  <div class="background-color" style="background-color: #481FA0; opacity: .8;"></div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-8 offset-lg-2 text-center">
+                    <h2 class="mb-3 text-white display-5" >저는 말이죠</h2>
+                    <p class="mb-4 px-lg-70 text-white fs-4">생산성을 높이는 도구에 대한 관심이 많고, 익히는 속도가 빠른 편입니다.<br class="hidden-xs"/> 때때로 꿈에서 문제를 해결하곤 합니다.</p>
+                    <div class="animated">
+                        <!-- Button-->
+                      <a class="btn btn-md btn-primary rounded-5 py-2 px-5" href="javascript:;" target="_self">이력서(링크)</a>
+                      </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </section> -->
+       </section>
 
-        <section>
+        <section style="padding-top: 138px;">
           <div class="container-lg py-6">
             <div class="row">
               <div class="col-12 text-center">
