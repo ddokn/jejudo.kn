@@ -111,13 +111,13 @@
                   </div>
                 </div>
                 <div class="d-flex align-items-center text-muted">
-                  <div class="d-flex align-items-center me-3">
+                  <div class="d-flex align-items-center me-3" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="bottom" title="방문 횟수">
                     <i class="bx bx-run fs-lg me-1 fw-bold"></i>
                     <span class="fs-sm">
                       {{ data[i].count }}
                     </span>
                   </div>
-                  <div class="d-flex align-items-center me-3">
+                  <div class="d-flex align-items-center me-3"  rel="noopener" data-bs-toggle="tooltip" data-bs-placement="bottom" title="개인 별점">
                     <i class="bx bxs-star fs-lg me-1"></i>
                     <span class="fs-sm ">
                       {{ data[i].point }}

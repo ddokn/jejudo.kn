@@ -48,7 +48,9 @@ export default {
   mounted(){
       this.getWeather();
       this.gotoTop();
-      this.tooltip();
+  },
+  updated(){
+    this.tooltip();
   },
   methods: {
     getWeather(){
@@ -97,7 +99,9 @@ export default {
       })
     },
     tooltip(){
-      Array.from(document.querySelectorAll('[data-bs-toggle="tooltip"]')).forEach(tooltipNode => new Tooltip(tooltipNode))
+      Array.from(document.querySelectorAll('[data-bs-toggle="tooltip"]')).forEach(
+        tooltipNode => new Tooltip(tooltipNode)
+      )
     },
   },
 }

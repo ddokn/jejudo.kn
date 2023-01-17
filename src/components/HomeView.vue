@@ -6,7 +6,9 @@
               <div class="bg-visual d-block mx-auto mb-3"></div>
               <h1 class="mb-1 fw-semibold lh-1">JejuDo.kn</h1>
               <p class="mb-4 fs-6">
-                <strong class="text-primary">D + {{ dday() }}</strong> Rest in JEJU
+                <a class="text-primary fw-bold" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="bottom" title="입도한지">
+                  D + {{ dday() }}
+                </a>
               </p>
               <p class="lead mb-4 text-secondary">
                 육지 토박이가 제주 섬 놈이 되어가는 과정을 담은 곳<br/>
