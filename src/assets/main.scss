@@ -308,6 +308,13 @@ footer {
             padding: 6rem 0 4rem;
         }
     }
+  
+}
+@media (max-width: 768px) { 
+    .wait_image {
+        width: 80% !important;
+        margin-left: -20%;
+    }
 }
 @media (max-width: 576px) {
     .hidden-xs {

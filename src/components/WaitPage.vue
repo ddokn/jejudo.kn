@@ -5,7 +5,7 @@
 
             <!-- Animation -->
             <div class="col-xl-6 col-md-7 order-md-2 ms-n5">
-                <img src="../assets/wait.svg" style="width: 100%">
+                <img class="wait_image" src="../assets/wait.svg" style="width: 100%">
             </div>
 
             <!-- Text -->
