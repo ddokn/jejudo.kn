@@ -167,7 +167,6 @@
         }
     },
     mounted() {
-      // this.test();
     },
     methods: {
         dday(){
@@ -178,9 +177,6 @@
 
             return day
         },
-        // test(){
-        //   console.log(this.link);
-        // }
     },
     props: {
       link: Array

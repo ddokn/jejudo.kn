@@ -48,9 +48,19 @@ export default {
   mounted(){
       this.getWeather();
       this.gotoTop();
+      setTimeout(()=>{
+        this.tooltip();  
+      }, 100)
   },
   updated(){
-    this.tooltip();
+    
+  },
+  watch: {
+    '$route' () {
+      setTimeout(()=>{
+        this.tooltip();  
+      }, 100)
+    }
   },
   methods: {
     getWeather(){
