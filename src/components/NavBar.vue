@@ -86,6 +86,10 @@ export default {
               fade[i].remove()
             }
           }        
+        }),
+        myOffcanvas.addEventListener('hidden.bs.offcanvas', event => {
+          this.event = event;
+          document.body.style = '';
         })
       }
     },
@@ -105,6 +109,11 @@ export default {
     }
 }
 @media (max-width: 991px) {
+  .navbar-toggler {
+    &:focus {
+      box-shadow: none !important;
+    }
+  }
   .offcanvas {
     max-width: 80% !important;
     .navbar-nav {
