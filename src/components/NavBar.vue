@@ -62,6 +62,7 @@ export default {
     name: 'NavBar',
     data(){
         return {
+          event: ''
         }
     },
     props: {
@@ -71,9 +72,22 @@ export default {
         icons: Array,
         link: Array
     },
-    methods: {
-    },
     mounted(){
+      this.removeFake();
+    },
+    methods: {
+      removeFake(){
+        const myOffcanvas = document.getElementById('offcanvasDarkNavbar')
+        myOffcanvas.addEventListener('show.bs.offcanvas', event => {
+          this.event = event;
+          let fade = document.getElementsByClassName('offcanvas-backdrop fade show');
+          for( let i = 0; i < fade.length; i++ ) {
+            while( fade.length > 0 ) {
+              fade[i].remove()
+            }
+          }        
+        })
+      }
     },
 }
 </script>
