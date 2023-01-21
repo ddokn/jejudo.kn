@@ -987,5 +987,34 @@ export default [
 				avatar: '',
 			}
 		]
+	},
+	{
+		restaurant : '치요남치킨',
+		summary : '나름 합리적인 가격, 세트메뉴 구성이 괜찮음',
+		address: '제주 제주시 동광로 35',
+		category : '제주시',
+		last_date : '2023-01-17',
+		color : '',
+		count: '1',
+		point: '4',
+		thumbnail: [
+			'https://i.postimg.cc/DzkJgJ5B/IMG-5253.jpg',
+			'https://i.postimg.cc/0yJKDdGz/IMG-5251.jpg',
+			'https://i.postimg.cc/8PYr7nv8/IMG-5252.jpg',
+		],
+		accompany : [
+			{
+				name: '고민수',
+				avatar: 'https://i.postimg.cc/h4XyHCnR/Kakao-Talk-Photo-2023-01-12-15-25-05.jpg',
+			},
+			{
+				name: '김도근',
+				avatar: '',
+			},
+			{
+				name: '김민희',
+				avatar: '',
+			}
+		]
 	}
 ]

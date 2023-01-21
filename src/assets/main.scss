@@ -297,6 +297,11 @@ footer {
 .hidden-lg {
     display: none;
 }
+.offcanvas-backdrop {
+    &~.offcanvas-backdrop {
+        display: none;
+    }
+}
 @media (min-width: 992px) {
     .size-md {
         max-width: 1100px;
