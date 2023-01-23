@@ -20,7 +20,7 @@
         </button>
         <div class="image-count">
             <span class="text-white fs-sm">
-                <span id="Count">{{ count }}</span>
+                <span id="count">{{ count }}</span>
                  / 
                  <span>{{ data[arrayCount].thumbnail.length }}</span>
             </span>
@@ -64,7 +64,7 @@ export default {
             let myCarousel = document.getElementById('carouselControls');
             myCarousel.addEventListener('slide.bs.carousel', function (e) {
                 this.count = e.to + 1;
-                document.getElementById('Count').innerText = this.count
+                document.getElementById('count').innerText = this.count
             });
         }
     }

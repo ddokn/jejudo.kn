@@ -31,7 +31,8 @@ header {
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%), inset 0 -1px 0 rgb(255 255 255 / 15%);
 }
 h1, h2, h3, .fw-bold {
-    font-family: 'NanumSquareRoundB', 'Hammersmith One', sans-serif;
+    // font-family: 'NanumSquareRoundB', 'Hammersmith One', sans-serif;
+    font-weight: 700;
 }
 main {
     h1, .contact_mail {
@@ -301,6 +302,9 @@ footer {
     &~.offcanvas-backdrop {
         display: none;
     }
+}
+.bg-faded-primary {
+    background-color: rgba(187, 37, 74, .12) !important;
 }
 @media (min-width: 992px) {
     .size-md {
