@@ -125,6 +125,7 @@ export default {
         let button = container.querySelector('.carousel-indicators').firstElementChild;
         firstChild.classList.add('active');
         button.classList.add('active');
+        container.classList.add('pointer-event');
       }
     },
     initCarousel(){
