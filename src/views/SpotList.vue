@@ -14,21 +14,6 @@
       <div class="col-lg-5 col-md-4">
         <h1 class="mb-2 mb-md-0 fw-bold">Spot List</h1>
       </div>
-      <!-- <div class="col-lg-7 col-md-8">
-        <div class="row gy-2 right">
-          <div class="col-lg-6">
-            <div class="d-flex align-items-center">
-              <select class="form-select" @change="selectValue($event)">
-                <option selected disabled hidden>정렬</option>
-                <option value="date">최근 방문 일자 순</option>
-                <option value="point">개인 별점 순</option>
-                <option value="count">방문 횟수 순</option>
-                <option value="people">동행 &middot; 추천인 순</option>
-              </select>
-            </div>
-          </div>
-        </div>
-      </div> -->
     </div>
     <div v-for="(a, i) in data" :key="i">
       <div class="row pb-5 mb-md-4 mb-lg-5 food-item">
@@ -69,7 +54,7 @@
           <div :class="i %2==0 ? 'ps-md-4 ms-md-2' : 'pe-md-4 me-md-2'">
             <div class="fs-sm text-muted mb-1">{{ data[i].date }}</div>
             <h2 class="h3" style="word-break: keep-all">{{ data[i].title }}</h2>
-            <a href="#" class="d-table badge bg-faded-primary text-primary fs-sm mb-3">{{ data[i].category }}</a>
+            <a href="#" class="d-table badge bg-faded-primary text-primary fs-sm mb-3 fw-normal">{{ data[i].category }}</a>
             <p class="d-md-none d-lg-block pb-3 mb-2 mb-md-3" style="word-break: keep-all;">{{ data[i].contents }}</p>
             <a href="javascript:;" class="btn btn-outline-primary" @click="showMap(i)" ref="mapButton">
             지도 펼치기
@@ -188,6 +173,11 @@ export default {
   }
 }
 @media (max-width: 991px) {
+  .food-item {
+    .btn-outline-primary {
+      width: 100%;
+    }
+  }
   .rellax-map {
     &.mt-5 {
       margin-top: 2rem !important

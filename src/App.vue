@@ -51,9 +51,9 @@ export default {
       setTimeout(()=>{
         this.tooltip();  
       }, 100)
+      // this.getKakao();
   },
   updated(){
-    
   },
   watch: {
     '$route' () {
@@ -63,6 +63,26 @@ export default {
     }
   },
   methods: {
+    // getKakao(){
+    //   let apiUrl = 'https://kapi.kakao.com/v1/api/talk/friends'
+    //   let apiKey = '6ea2f02e3e1edb4c8db26d105dc7da30'
+    //   axios.get(apiUrl, {
+    //     headers: {
+    //       Authorization: `Bearer ${apiKey}`,
+    //     }, 
+    //     params: {
+    //       offset:3,
+    //       limit:3,
+    //       order:'asc'
+    //     }
+    //   })
+    //   .then((res)=>{
+    //     console.log(res);
+    //   })
+    //   .catch((error)=>{
+    //     console.log(error);
+    //   })
+    // },
     getWeather(){
       let apiUrl = process.env.VUE_APP_WEATHER_URL;
       let apiKey = process.env.VUE_APP_WEATHER_TOKEN;
