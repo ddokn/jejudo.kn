@@ -33,7 +33,7 @@
     <div v-for="(a, i) in data" :key="i">
       <div class="row pb-5 mb-md-4 mb-lg-5 food-item">
         <div class="rellax col-md-6 pb-1 mb-3 pb-md-0 mb-md-0" :class="i %2==0 ? '' : 'order-md-2' ">
-          <div :id="'spotCarousel_' + i" class="carousel slide pointer-event _carousel" data-bs-ride="carousel" data-bs-touch="true" data-bs-interval="10000000">
+          <div :id="'spotCarousel_' + i" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true" data-bs-interval="10000000">
             <div class="carousel-indicators">
               <button
               v-for="button in data[i].thumbnail.length"
@@ -68,7 +68,7 @@
         <div class="rellax col-md-6 d-flex align-items-center" :class="i %2==0 ? '' : 'order-md-1'">
           <div :class="i %2==0 ? 'ps-md-4 ms-md-2' : 'pe-md-4 me-md-2'">
             <div class="fs-sm text-muted mb-1">{{ data[i].date }}</div>
-            <h2 class="h3">{{ data[i].title }}</h2>
+            <h2 class="h3" style="word-break: keep-all">{{ data[i].title }}</h2>
             <a href="#" class="d-table badge bg-faded-primary text-primary fs-sm mb-3">{{ data[i].category }}</a>
             <p class="d-md-none d-lg-block pb-3 mb-2 mb-md-3" style="word-break: keep-all;">{{ data[i].contents }}</p>
             <a href="javascript:;" class="btn btn-outline-primary" @click="showMap(i)" ref="mapButton">
@@ -99,14 +99,16 @@ export default {
       count: 1,
       order: false,
       map: null,
+      carousel: null,
     }
   },
   mounted(){
     this.findFirst();
+    this.initCarousel();
     if ( !window.kakao || !window.kakao.maps ) {
       const script = document.createElement('script');
       script.src = '//dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=' + process.env.VUE_APP_KAKAKOMAP_KEY;
-      /* global kakao*/
+      /* global kakao */
       script.addEventListener('load', ()=>{
         kakao.maps.load(this.initMap);
       })
@@ -125,13 +127,14 @@ export default {
         button.classList.add('active');
       }
     },
+    initCarousel(){
+    },
     initMap(){
       for(let i = 0; i < this.data.length; i++ ) {
         let container = document.getElementById("map_" + i);
         let options = {
           center: new kakao.maps.LatLng(this.data[i].urlX, this.data[i].urlY),
           level: 3
-          // draggable: false
         };
         this.map = new kakao.maps.Map(container, options);
         let markerPosition  = new kakao.maps.LatLng(this.data[i].urlX, this.data[i].urlY); 
@@ -168,6 +171,7 @@ export default {
       bottom: 0;
       left: 0;
       z-index: 1;
+      border-radius: 0 0 0.5rem 0.5rem;
     }
     .carousel-item {
       min-height: 400px;
@@ -182,4 +186,15 @@ export default {
     }
   }
 }
+@media (max-width: 991px) {
+  .rellax-map {
+    &.mt-5 {
+      margin-top: 2rem !important
+    }
+    > div {
+      min-height: 200px !important;
+    }
+  }
+}
+
 </style>
