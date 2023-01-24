@@ -118,7 +118,7 @@
                     <p class="px-lg-70 text-white fs-4" style="--bs-text-opacity: .8;">생산성을 높이는 도구에 대한 관심이 많고,<br class="hidden-lg"/>익히는 속도가 빠른 편입니다.<br/>때때로 꿈에서 문제를 해결하곤 합니다.</p>
                     <div class="animated mt-4">
                         <!-- Button-->
-                      <a class="btn btn-md btn-primary rounded-5 py-2 px-5" href="javascript:;" target="_self">이력서(링크)</a>
+                      <a class="btn btn-md btn-primary rounded-5 py-2 px-5" href="https://ddokn.notion.site/b3d969a158434098b2a6d1d5a17b21d1" target="_blank">이력서(링크)</a>
                       </div>
                   </div>
                 </div>
