@@ -1,35 +1,43 @@
 <template>
-    
-    <NavBar :link="link" :menu="menu" :weather="weather" :apiLoad="apiLoad" :icons="icons"/>
 
-    <router-view :link="link"></router-view>
-    
-    <FooterBar/>
+  <PreLoader v-if="isLoading"/>
 
-    <a id="scrollTopBtn" href="#top" class="btn-scroll-top" data-scroll="">
-      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2 text-primary">Top</span>
-      <i class="btn-scroll-top-icon bx bx-chevron-up text-white fs-5"></i>
-    </a>
+  <NavBar :link="link" :menu="menu" :weather="weather" :apiLoad="apiLoad" :icons="icons"/>
+
+  <router-view :link="link"></router-view>
+  
+  <FooterBar/>
+
+  <a id="scrollTopBtn" href="#top" class="btn-scroll-top" data-scroll="">
+    <span class="btn-scroll-top-tooltip text-muted fs-sm me-2 text-primary">Top</span>
+    <i class="btn-scroll-top-icon bx bx-chevron-up text-white fs-5"></i>
+  </a>
     
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue'
 import FooterBar from './components/FooterBar.vue'
+import PreLoader from './components/PreLoader.vue'
+
 import axios from 'axios'
 import { Tooltip } from 'bootstrap/dist/js/bootstrap.esm.min.js'
+
+
 
 export default {
   name: 'App',
   components: {
     NavBar,
     FooterBar,
+    PreLoader,
   },
   data(){
     return {
       menu: ['먹은 곳', '가본 곳', '느낀 것'],
       weather: [],
       apiLoad: false,
+      isLoading: false,
       icons: [ 
         'bi-cloud-lightning-fill', // 2xx 뇌우
         'bi-cloud-rain-fill', // 3xx, 5xx 비
@@ -45,44 +53,25 @@ export default {
       ]
     }
   },
+  created(){
+  },
   mounted(){
       this.getWeather();
       this.gotoTop();
       setTimeout(()=>{
         this.tooltip();  
       }, 100)
-      // this.getKakao();
   },
   updated(){
   },
   watch: {
     '$route' () {
       setTimeout(()=>{
-        this.tooltip();  
+        this.tooltip();
       }, 100)
     }
   },
   methods: {
-    // getKakao(){
-    //   let apiUrl = 'https://kapi.kakao.com/v1/api/talk/friends'
-    //   let apiKey = '6ea2f02e3e1edb4c8db26d105dc7da30'
-    //   axios.get(apiUrl, {
-    //     headers: {
-    //       Authorization: `Bearer ${apiKey}`,
-    //     }, 
-    //     params: {
-    //       offset:3,
-    //       limit:3,
-    //       order:'asc'
-    //     }
-    //   })
-    //   .then((res)=>{
-    //     console.log(res);
-    //   })
-    //   .catch((error)=>{
-    //     console.log(error);
-    //   })
-    // },
     getWeather(){
       let apiUrl = process.env.VUE_APP_WEATHER_URL;
       let apiKey = process.env.VUE_APP_WEATHER_TOKEN;

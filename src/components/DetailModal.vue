@@ -15,7 +15,7 @@
           <div class="d-flex align-items-center text-muted w-100" style="justify-content: space-between;">
             <div class="d-flex align-items-center">
               <i class="bx bxs-map fs-lg me-1"></i>
-              <a class="fw-bold" :href="'https://map.kakao.com/link/map/'+data[arrayCount].id" target="_blank">지도로 보기</a>
+              <a :href="'https://map.kakao.com/link/map/'+data[arrayCount].id" target="_blank">지도로 보기</a>
             </div>
             <div class="d-flex align-items-center">
               <div class="d-flex align-items-center me-3">

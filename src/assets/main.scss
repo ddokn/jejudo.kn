@@ -196,6 +196,7 @@ footer {
     width: 44px;
     height: 44px;
     border-radius: 50%;
+    z-index: 100;
     &.show {
         bottom: 1.25rem;
     }
@@ -374,7 +375,7 @@ footer {
         max-height: none;
     }
     .lead {
-        font-size: calc(0.6rem + 1vw);
+        font-size: 1rem;
     }
     .contact_mail {
         font-size: 1.2rem;
