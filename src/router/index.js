@@ -3,6 +3,7 @@ import home from '../components/HomeView.vue'
 import food from '../views/FoodList.vue'
 import spot from '../views/SpotList.vue'
 import record from '../views/RecordList.vue'
+import login from '../views/KakaoLogin.vue'
 
 
 const routes = [
@@ -21,6 +22,10 @@ const routes = [
   {
     path: "/record",
     component: record,
+  },
+  {
+    path: "/login",
+    component: login,
   }
 ];
 

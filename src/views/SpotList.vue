@@ -92,7 +92,7 @@ export default {
     this.initCarousel();
     if ( !window.kakao || !window.kakao.maps ) {
       const script = document.createElement('script');
-      script.src = '//dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=' + process.env.VUE_APP_KAKAKOMAP_KEY;
+      script.src = '//dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=' + process.env.VUE_APP_KAKAKO_JS_KEY;
       /* global kakao */
       script.addEventListener('load', ()=>{
         kakao.maps.load(this.initMap);

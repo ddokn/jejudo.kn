@@ -8,3 +8,5 @@ import '@/assets/main.scss'
 import '@/assets/boxicons.min.css'
 
 createApp(App).use(router).mount('#app')
+
+window.Kakao.init(process.env.VUE_APP_KAKAKO_JS_KEY);
