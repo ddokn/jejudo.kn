@@ -10,4 +10,4 @@ import '@/assets/boxicons.min.css'
 
 createApp(App).use(router).use(stroe).mount('#app')
 
-window.Kakao.init(process.env.VUE_APP_KAKAKO_JS_KEY);
+// window.Kakao.init(process.env.VUE_APP_KAKAKO_JS_KEY);
