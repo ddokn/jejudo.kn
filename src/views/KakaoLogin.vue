@@ -9,6 +9,7 @@ export default {
 	name: 'KakaoLogin',
 	data(){
 		return {
+			isLogin: false
 		}
 	},
 	mounted(){
@@ -34,6 +35,9 @@ export default {
 						url: '/v2/user/me',
 						success: async function (response) {
 							console.log(response);
+							window.Kakao.Auth.authorize({
+								redirectUri: 'http://localhost:8080',
+							});
 						},
 						fail: function (error) {
 							console.log(error)

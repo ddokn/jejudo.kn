@@ -1,12 +1,13 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router/index.js'
+import stroe from './store/index.js'
 
 import 'bootstrap'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import '@/assets/main.scss'
 import '@/assets/boxicons.min.css'
 
-createApp(App).use(router).mount('#app')
+createApp(App).use(router).use(stroe).mount('#app')
 
 window.Kakao.init(process.env.VUE_APP_KAKAKO_JS_KEY);

@@ -48,11 +48,11 @@
                 <small class="d-lg-none ms-2">Instagram</small>
               </a>
             </li>
-            <li class="nav-item col-6 col-lg-auto">
+            <!-- <li class="nav-item col-6 col-lg-auto">
               <router-link to="/login" class="nav-link py-2 px-0 px-lg-2" href="https://www.instagram.com/kim.dokn/" rel="noopener" style="font-size: 18px;" data-bs-toggle="tooltip" data-bs-placement="bottom" title="로그인">
                 <i class="bi bi-person-fill-add"></i>
              </router-link>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>

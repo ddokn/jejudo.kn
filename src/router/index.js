@@ -10,6 +10,7 @@ const routes = [
   {
     path: "/",
     component: home,
+    props: true
   },
   {
     path: "/food",
@@ -26,6 +27,7 @@ const routes = [
   {
     path: "/login",
     component: login,
+    props: true
   }
 ];
 
