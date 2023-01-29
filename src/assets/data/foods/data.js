@@ -1088,5 +1088,38 @@ export default [
 			}
 		],
 		id: '2078948312',
+	},
+	{
+		restaurant : '제주 주도',
+		summary : '여기서 방어 한 번 먹으면 다른 데서 못 먹음',
+		address: '제주특별자치도 제주시 광양7길 32-9 1층',
+		category : '제주시',
+		last_date : '2023-01-27',
+		color : '',
+		count: '1',
+		point: '4',
+		thumbnail: [
+			'https://i.postimg.cc/L6JDLL4T/Kakao-Talk-20230129-095857209-01.jpg',
+			'https://i.postimg.cc/8CSm2YRK/Kakao-Talk-20230129-095857209-02.jpg',
+			'https://i.postimg.cc/Pr044JPk/Kakao-Talk-20230129-095857209-03.jpg',
+			'https://i.postimg.cc/76PM6TQS/Kakao-Talk-20230129-095857209-04.jpg',
+			'https://i.postimg.cc/BnDCw3KP/Kakao-Talk-20230129-095857209-05.jpg',
+			'https://i.postimg.cc/CKssS4JF/Kakao-Talk-20230129-095857209-06.jpg',
+		],
+		accompany : [
+			{
+				name: '임효현',
+				avatar: 'https://i.postimg.cc/Bv6Hr0cD/2023-01-13-4-22-47.png',
+			},
+			{
+				name: '김민희',
+				avatar: '',
+			},
+			{
+				name: '김도근',
+				avatar: '',
+			}
+		],
+		id: '43799360',
 	}
 ]
