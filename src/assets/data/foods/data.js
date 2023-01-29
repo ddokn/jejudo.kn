@@ -1091,7 +1091,7 @@ export default [
 	},
 	{
 		restaurant : '제주 주도',
-		summary : '여기서 방어 한 번 먹으면 다른 데서 못 먹음',
+		summary : '조용하고 아늑한 분위기, 합리적인 가격, 뛰어난 맛, 친절함까지 흠잡을 곳이 없는 곳',
 		address: '제주특별자치도 제주시 광양7길 32-9 1층',
 		category : '제주시',
 		last_date : '2023-01-27',
@@ -1099,7 +1099,6 @@ export default [
 		count: '1',
 		point: '4',
 		thumbnail: [
-			'https://i.postimg.cc/L6JDLL4T/Kakao-Talk-20230129-095857209-01.jpg',
 			'https://i.postimg.cc/8CSm2YRK/Kakao-Talk-20230129-095857209-02.jpg',
 			'https://i.postimg.cc/Pr044JPk/Kakao-Talk-20230129-095857209-03.jpg',
 			'https://i.postimg.cc/76PM6TQS/Kakao-Talk-20230129-095857209-04.jpg',
