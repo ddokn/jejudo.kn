@@ -18,7 +18,13 @@
     <div v-for="(a, i) in data" :key="i">
       <div class="row pb-5 mb-md-4 mb-lg-5 food-item">
         <div class="rellax col-md-6 pb-1 mb-3 pb-md-0 mb-md-0" :class="i %2==0 ? '' : 'order-md-2' ">
-          <div :id="'spotCarousel_' + i" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true" data-bs-interval="10000000">
+          <div 
+          :id="'spotCarousel_' + i" 
+          class="carousel slide" 
+          data-bs-interval="5000"
+          data-bs-touch="true"
+          data-bs-ride="carousel"
+          >
             <div class="carousel-indicators">
               <button
               v-for="button in data[i].thumbnail.length"

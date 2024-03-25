@@ -1,20 +1,25 @@
 <template>
-    <div id="carouselControls" class="carousel slide pointer-event" data-bs-ride="carousel" data-bs-touch="true">
+    <div
+    :id="'carouselControls_' + data[arrayCount].id"
+    class="carousel slide"
+    data-bs-interval="5000"
+    data-bs-touch="true"
+    data-bs-ride="carousel"
+    >
         <div class="carousel-inner">
             <div 
             class="carousel-item"
             v-for="thumbnail in data[arrayCount].thumbnail"
             :key="thumbnail"
-            data-bs-interval="10000000"
             >
                 <img :src="thumbnail" class="d-block w-100" alt="">
             </div>
         </div>
-        <button @click="swiperCount" class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+        <button @click="swiperCount" class="carousel-control-prev" type="button" :data-bs-target="'#carouselControls_' + data[arrayCount].id" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button @click="swiperCount" class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+        <button @click="swiperCount" class="carousel-control-next" type="button" :data-bs-target="'#carouselControls_' + data[arrayCount].id" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
@@ -39,7 +44,7 @@ export default {
     props: {
       data: Array,
       arrayCount: Number,
-      select: String,
+      select: String
     },
     mounted(){
         this.findFirst();
@@ -61,7 +66,7 @@ export default {
             }, 100)
         },
         swiperCount(){
-            let myCarousel = document.getElementById('carouselControls');
+            let myCarousel = document.querySelector(`#carouselControls_${this.data[this.arrayCount].id}`);
             myCarousel.addEventListener('slide.bs.carousel', function (e) {
                 this.count = e.to + 1;
                 document.getElementById('count').innerText = this.count
@@ -88,6 +93,9 @@ export default {
     &-next,
     &-prev {
         width: 6% !important;
+        top: 50% !important;
+        bottom: auto !important;
+        transform: translateY(-50%);
         &:hover,
         &:focus {
             opacity: 1;

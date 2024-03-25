@@ -54,13 +54,13 @@
             class="position-absolute top-0 start-0 w-100 h-100"
             aria-label="Read more"
             data-bs-toggle="modal"
-            data-bs-target="#modal"
+            :data-bs-target="`#modal_`+ data[arrayCount].id +``"
             @click="getArray(i)"
             >
             </a>
             <div class="image-count">
               <span class="text-white fs-sm">
-                1 / {{ data[i].thumbnail.length }}
+                더보기
               </span>
               <i class="bx bx-plus text-white"></i>
             </div>
@@ -79,7 +79,7 @@
                 <a
                 href="javascript:;"
                 data-bs-toggle="modal"
-                data-bs-target="#modal"
+                :data-bs-target="`#modal_`+ data[arrayCount].id +``"
                 @click="getArray(i)"
                 >
                   {{ data[i].restaurant }}
@@ -141,7 +141,7 @@
           <div class="position-relative h-100">
               <a
               data-bs-toggle="modal"
-              data-bs-target="#modal"
+              :data-bs-target="`#modal_`+ data[arrayCount].id +``"
               href="javascript:;"
               class="position-absolute top-0 start-0 w-100 h-100"
               aria-label="Read more"
@@ -163,7 +163,7 @@
                 <a 
                 href="javascript:;"
                 data-bs-toggle="modal"
-                data-bs-target="#modal"
+                :data-bs-target="`#modal_`+ data[arrayCount].id +``"
                 @click="getArray(i)"
                 >
                   {{ data[i].restaurant }}
@@ -194,7 +194,7 @@
       <button class="btn btn-primary" @click="getMore" type="button" style="width: 200px">더보기</button>
     </div>
   </section>
-  <DetailModal :data="data" :arrayCount="arrayCount" :select="select"/>
+  <DetailModal :data="data" :arrayCount="arrayCount" :select="select"/>  
 </template>
 <script>
 import foodData from '@/assets/data/foods/data'
@@ -244,7 +244,8 @@ export default {
         }
       },
       getArray(i){
-        this.arrayCount = i
+        this.arrayCount = i;
+        document.getElementById('count').innerText = 1;
       },
       selectValue(e){
         if ( e.target.value == 'point' ) {
@@ -292,7 +293,7 @@ export default {
           copyText.setAttribute('type', 'hidden')
           window.getSelection().removeAllRanges();
       },
-    },
+    }
 }
 </script>
 
@@ -315,19 +316,24 @@ export default {
   right: 10px;
   bottom: 10px;
   background: rgba(0, 0, 0, 0.5);
-  padding: 0px 10px;
+  padding: 0 6px 0 10px;
   border-radius: 15px;
   font-family: 'Hammersmith One', sans-serif;
   cursor: pointer;
   .fs-sm {
     font-size: 12px !important;
     line-height: 1.8;
-    margin-right: 4px;
+    margin-right: 0;
   }
   .bx {
     font-size: 14px;
     opacity: .8;
     vertical-align: middle;
+  }
+}
+.modal-body {
+  .image-count {
+    padding: 0 10px;
   }
 }
 .nav-link {

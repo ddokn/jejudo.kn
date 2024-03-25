@@ -174,7 +174,6 @@
             let start = new Date('2021-09-30');
             let timeDiff = now.getTime() - start.getTime();
             let day = Math.floor(timeDiff / (1000 * 60 * 60 * 24) + 1);
-
             return day
         },
     },

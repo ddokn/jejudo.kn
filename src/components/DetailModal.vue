@@ -1,5 +1,5 @@
 <template>
-  <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" :id="'modal_' + data[arrayCount].id" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
         <div class="modal-header">
@@ -9,13 +9,13 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <Carousel :data="data" :arrayCount="arrayCount" :select="select"/>
+          <Carousel :data="data" :arrayCount="arrayCount" :select="select" :itemCount="itemCount"/>
         </div>
         <div class="modal-footer">
-          <div class="d-flex align-items-center text-muted w-100" style="justify-content: space-between;">
+          <div class="d-flex align-items-center text-muted w-100" style="justify-content: space-between">
             <div class="d-flex align-items-center">
               <i class="bx bxs-map fs-lg me-1"></i>
-              <a :href="'https://map.kakao.com/link/map/'+data[arrayCount].id" target="_blank">지도로 보기</a>
+              <a :href="'https://map.kakao.com/link/map/'+data[arrayCount].id" target="_blank" class="fs-sm">위치 보기</a>
             </div>
             <div class="d-flex align-items-center">
               <div class="d-flex align-items-center me-3">
@@ -51,7 +51,7 @@ export default {
     props: {
       data: Array,
       arrayCount: Number,
-      select: String,
+      select: String
     },
     components: {
       Carousel,
