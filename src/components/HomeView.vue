@@ -149,17 +149,17 @@
         return {
           cardData:[
             {
-              'image': require("../assets/main01.jpeg"),
+              'image': require("../assets/main01.webp"),
               'title': 'Local Food',
               'sub': '먹은 곳',
             },
             {
-              'image': require("../assets/main02.jpeg"),
+              'image': require("../assets/main02.webp"),
               'title': 'Tourist Spot',
               'sub': '가본 곳',
             },
             {
-              'image': require("../assets/main03.jpeg"),
+              'image': require("../assets/main03.webp"),
               'title': 'Daily Record',
               'sub': '느낀 것',
             },
