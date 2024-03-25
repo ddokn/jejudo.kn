@@ -5,7 +5,6 @@ import spot from '../views/SpotList.vue'
 import record from '../views/RecordList.vue'
 import login from '../views/KakaoLogin.vue'
 
-
 const routes = [
   {
     path: "/",
@@ -15,14 +14,17 @@ const routes = [
   {
     path: "/food",
     component: food,
+    props: true
   },
   {
     path: "/spot",
     component: spot,
+    props: true
   },
   {
     path: "/record",
     component: record,
+    props: true
   },
   {
     path: "/login",
@@ -30,7 +32,6 @@ const routes = [
     props: true
   }
 ];
-
 
 const router = createRouter ({
   history: createWebHistory(),

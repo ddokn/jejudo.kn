@@ -41,6 +41,7 @@
 
 <script>
 import Carousel from '@/components/Carousel.vue'
+
 export default {
     name: 'DetailModal',
     data(){
@@ -55,10 +56,16 @@ export default {
     },
     components: {
       Carousel,
-    }
+    },
 }
+
+
 </script>
 
-<style>
-
+<style lang="scss">
+.modal-backdrop {
+  &:last-child {
+    display: none;
+  }
+}
 </style>

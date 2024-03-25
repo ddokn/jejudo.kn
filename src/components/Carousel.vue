@@ -34,6 +34,7 @@
 </template>
 
 <script>
+
 export default {
     name: 'CareselItem',
     data(){
@@ -48,7 +49,7 @@ export default {
     },
     mounted(){
         this.findFirst();
-        this.swiperCount()
+        this.swiperCount();
     },
     watch: {
         arrayCount(){
@@ -71,7 +72,7 @@ export default {
                 this.count = e.to + 1;
                 document.getElementById('count').innerText = this.count
             });
-        }
+        },
     }
 }
 </script>

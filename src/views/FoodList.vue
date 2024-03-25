@@ -27,11 +27,11 @@
                   </a>
                 </div>
                 <select class="form-select" @change="selectValue($event)">
-                  <option selected disabled hidden>정렬</option>
-                  <option value="date">최근 방문 일자 순</option>
-                  <option value="point">개인 별점 순</option>
+                  <!-- <option selected disabled hidden>정렬</option> -->
+                  <option value="date">최신 순</option>
+                  <option value="point">별점 순</option>
                   <option value="count">방문 횟수 순</option>
-                  <option value="people">동행 &middot; 추천인 순</option>
+                  <option value="people">동행 &middot; 추천 순</option>
                 </select>
               </div>
             </div>
@@ -134,7 +134,7 @@
     <div v-if="type == 'grid'" class="row row-cols-lg-3 row-cols-sm-2 row-cols-1 gy-md-4 gy-2">
       <div 
       v-for="(b, i) in pageSize"
-      :key="i" 
+      :key="i"
       class="col pb-3"
       >
         <article class="card border-0 shadow-sm h-100">
@@ -199,6 +199,7 @@
 <script>
 import foodData from '@/assets/data/foods/data'
 import DetailModal from '@/components/DetailModal.vue'
+import { Carousel } from 'bootstrap/dist/js/bootstrap.esm.min.js'
 
 export default {
     name: 'FoodList',
@@ -226,10 +227,15 @@ export default {
     },
     mounted(){
       this.getData();
+      this.setCarousel();
     },
     computed: {
     },
     methods: {
+      setCarousel(){
+        let container = document.getElementById('carouselControls_' + foodData[this.arrayCount].id);
+        new Carousel(container);
+      },
       getData(){
         this.data = foodData;
       },

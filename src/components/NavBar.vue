@@ -125,6 +125,10 @@ export default {
       padding-right: 0 !important;
       margin-top: 1rem !important;
       margin-bottom: 3rem !important;
+      .nav-item {
+        width: 100%;
+        text-align: center;
+      }
     }
   }
 }

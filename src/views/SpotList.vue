@@ -79,6 +79,7 @@
 
 <script>
 import spotData from '@/assets/data/spot/data'
+import { Carousel } from 'bootstrap/dist/js/bootstrap.esm.min.js'
 
 export default {
   components: { 
@@ -90,12 +91,11 @@ export default {
       count: 1,
       order: false,
       map: null,
-      carousel: null,
+      carousel: null
     }
   },
   mounted(){
     this.findFirst();
-    this.initCarousel();
     if ( !window.kakao || !window.kakao.maps ) {
       const script = document.createElement('script');
       script.src = '//dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=' + process.env.VUE_APP_KAKAKO_JS_KEY;
@@ -117,9 +117,8 @@ export default {
         firstChild.classList.add('active');
         button.classList.add('active');
         container.classList.add('pointer-event');
+        new Carousel(container);
       }
-    },
-    initCarousel(){
     },
     initMap(){
       for(let i = 0; i < this.data.length; i++ ) {
