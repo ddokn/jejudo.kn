@@ -915,7 +915,7 @@ export default [
 		count: '4',
 		point: '5',
 		thumbnail: [
-			'https://i.postimg.cc/FsZDLn21/2.jpg',
+			'go_1.webp',
 			'https://i.postimg.cc/hv8MMCvy/1.jpg',
 			'https://i.postimg.cc/JzzKc5Lx/3.jpg',
 		],

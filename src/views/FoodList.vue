@@ -47,7 +47,7 @@
         <div class="row g-0">
           <div class="col-sm-4 position-relative bg-position-center bg-repeat-0 bg-size-cover" 
           style="min-height: 15rem; background-size: cover; background-repeat: no-repeat; background-position: 50% 50%;"
-          :style="`background-image: url(` + data[i].thumbnail[0] + `)`"
+          :style="`background-image: url(@/assets/rank/${data[i].thumbnail[0]})`"
           >
             <a
             href="javascript:;"
