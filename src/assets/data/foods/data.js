@@ -127,12 +127,12 @@ export default [
 		],
 		accompany : [
 			{
-				name: '익명의 택시기사님',
-				avatar: 'https://i.postimg.cc/L8H346WW/default-profile.png',
-			},
-			{
 				name: '김도근',
 				avatar: 'https://i.postimg.cc/h45XzZ60/IMG-5235-3.jpg',
+			},
+			{
+				name: '택시기사님',
+				avatar: 'https://i.postimg.cc/L8H346WW/default-profile.png',
 			},
 			{
 				name: '인치현',

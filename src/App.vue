@@ -19,7 +19,6 @@
 import NavBar from './components/NavBar.vue'
 import FooterBar from './components/FooterBar.vue'
 import PreLoader from './components/PreLoader.vue'
-
 import axios from 'axios'
 import { Tooltip } from 'bootstrap/dist/js/bootstrap.esm.min.js'
 
@@ -34,7 +33,7 @@ export default {
   },
   data(){
     return {
-      menu: ['먹은 곳', '가본 곳', '느낀 것'],
+      menu: ['먹은 곳', '가본 곳', '준비 중'],
       weather: [],
       apiLoad: false,
       isLoading: false,
@@ -75,7 +74,6 @@ export default {
     getWeather(){
       let apiUrl = process.env.VUE_APP_WEATHER_URL;
       let apiKey = process.env.VUE_APP_WEATHER_TOKEN;
-
       axios.get(apiUrl, {
         params: {
           lat: 33.49,
@@ -87,17 +85,18 @@ export default {
       })
       .then((res)=>{
         this.weather = res.data;
-        if ( this.weather.weather[0].id >= 200 && this.weather.weather[0].id < 300 ) {
+        const weatherId = this.weather.weather[0].id;
+        if (weatherId >= 200 && weatherId < 300) {
           this.icons = this.icons[0];
-        } else if ( this.weather.weather[0].id >= 300 && this.weather.weather[0].id < 600 ) {
+        } else if (weatherId >= 300 && weatherId < 600) {
           this.icons = this.icons[1];
-        } else if ( this.weather.weather[0].id >= 600 && this.weather.weather[0].id < 700 ) {
+        } else if (weatherId >= 600 && weatherId < 700) {
           this.icons = this.icons[2];
-        } else if ( this.weather.weather[0].id >= 700 && this.weather.weather[0].id < 800 ) {
+        } else if (weatherId >= 700 && weatherId < 800) {
           this.icons = this.icons[3];
-        } else if ( this.weather.weather[0].id == 800  ) {
+        } else if (weatherId == 800) {
           this.icons = this.icons[4];
-        } else if ( this.weather.weather[0].id >= 801  ) {
+        } else if (weatherId >= 801) {
           this.icons = this.icons[5];
         }
         this.apiLoad = true;
@@ -125,6 +124,3 @@ export default {
   },
 }
 </script>
-
-<style>
-</style>

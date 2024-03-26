@@ -161,7 +161,7 @@
             {
               'image': require("../assets/main03.webp"),
               'title': 'Daily Record',
-              'sub': '느낀 것',
+              'sub': 'Coming Soon',
             },
           ]
         }
