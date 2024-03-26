@@ -1,5 +1,6 @@
 @import './variables.scss';
 @import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Hammersmith+One&display=swap');
 
 
@@ -26,6 +27,7 @@ a {
 }
 body {
     font-family: 'NanumSquareRound', 'Malgun Gothic', 'dotum', sans-serif;
+    letter-spacing: -0.5px;
 }
 header {
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%), inset 0 -1px 0 rgb(255 255 255 / 15%);
